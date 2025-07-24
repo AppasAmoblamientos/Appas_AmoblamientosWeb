@@ -208,21 +208,36 @@ footer {
 }
 
 
-/* INICIO (Hero Section) */
+/* INICIO (Hero Section) - Estilo por defecto (para escritorio y tabletas) */
 #inicio {
-  /* Tailwind: relative h-screen bg-cover bg-center flex items-center justify-center text-white */
+  /* Mantiene tu imagen de fondo actual para pantallas más grandes */
+  background: url('img/fondo.jpeg') no-repeat center center/cover;
   height: 90vh; /* Usa 90% del viewport height para que el footer no quede tan lejos */
   min-height: 500px; /* Altura mínima para asegurar visibilidad en pantallas pequeñas */
   background-attachment: fixed; /* Efecto parallax */
+  position: relative; /* Necesario para el overlay */
+  display: flex; /* Para centrar contenido */
+  align-items: center;
+  justify-content: center;
+  color: white; /* Color del texto sobre el fondo */
+  overflow: hidden; /* Evita desbordamientos */
 }
 
+/* Overlay para la sección de inicio */
 #inicio .overlay {
-  /* Tailwind: absolute inset-0 bg-black opacity-50 */
-  background: rgba(0, 0, 0, 0.6); /* Más oscuro para mejor contraste con el texto */
-  padding: 0; /* Ya no lleva padding aquí, lo tiene el texto directamente */
-  border-radius: 0; /* Ya no lleva borde radio el overlay de fondo */
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Oscurecer más la imagen para mejor contraste con el texto */
+  z-index: 0; /* Detrás del contenido */
 }
 
+/* Contenido dentro de la sección de inicio */
+#inicio .relative.z-10 {
+  position: relative; /* Asegura que el contenido esté sobre el overlay */
+  z-index: 1; /* Por encima del overlay */
+}
+
+/* El resto de tu CSS para #inicio después de estos bloques */
 #inicio h1 {
   /* Tailwind: text-5xl md:text-7xl font-extrabold leading-tight tracking-wider mb-4 */
   font-family: 'Playfair Display', serif; /* Si importas esta fuente, le dará un toque elegante */
@@ -286,9 +301,6 @@ footer {
   color: #66BB6A;
 }
 
-
-/* Media Queries - Mejoras para Responsividad */
-
 /* Menú móvil (oculta el menú normal y muestra el de hamburguesa) */
 @media (max-width: 767px) { /* Breakpoint para móviles */
   header.bg-white nav {
@@ -338,13 +350,26 @@ footer {
       color: #ea580c;
   }
   
-  /* Ajustes generales para móviles */
-  #inicio h1 {
-      font-size: 3rem; /* Título principal más pequeño en móvil */
-  }
-  #inicio p {
-      font-size: 1.25rem;
-  }
+  #inicio {
+    /* SOBRESCRIBE la imagen de fondo SOLO para móviles */
+    background: url('img/fondoCelular.jpg') no-repeat center center/cover; /* <--- TU NUEVA IMAGEN AQUÍ */
+    background-attachment: scroll; /* En móviles, a veces es mejor que el fondo no tenga parallax para rendimiento y UX */
+    height: 70vh; /* Puedes ajustar la altura para móviles si la imagen se ve mejor con menos altura */
+    min-height: 400px; /* Altura mínima para asegurar visibilidad */
+}
+}
+
+/* El resto de tu CSS para #inicio después de estos bloques */
+#inicio h1 {
+/* Tailwind: text-5xl md:text-7xl font-extrabold leading-tight tracking-wider mb-4 */
+font-family: 'Playfair Display', serif; /* Si importas esta fuente, le dará un toque elegante */
+text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Sombra para el texto del título */
+}
+
+#inicio p {
+/* Tailwind: text-xl md:text-2xl font-light max-w-2xl mx-auto */
+text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* Sombra para el texto del subtítulo */
+}
 
   #sobre-nosotros h2,
   #productos h2,
