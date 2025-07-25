@@ -402,3 +402,109 @@ footer {
       height: 300px;
   }
 }
+
+/* ========================================= */
+/* NUEVA MEDIA QUERY: Para pantallas extra pequeñas (ej. celulares muy viejos o con baja resolución) */
+/* ========================================= */
+@media (max-width: 480px) {
+  /* Ajustes específicos para pantallas muy pequeñas */
+
+  /* Header y Logo */
+  header.bg-white .logo-img {
+      height: 50px; /* Logo un poco más pequeño */
+  }
+  .logo .text-3xl {
+      font-size: 1.8rem; /* Tamaño del texto del logo ajustado */
+  }
+
+  /* Títulos de sección */
+  #inicio h1 {
+      font-size: 2.5rem; /* Título principal aún más pequeño */
+  }
+  #inicio p {
+      font-size: 1rem; /* Párrafo principal más pequeño */
+  }
+
+  #sobre-nosotros h2,
+  #productos h2,
+  #pedidos h2,
+  #contacto h2 {
+      font-size: 1.8rem; /* Títulos de sección más pequeños */
+  }
+
+  /* Párrafos de contenido */
+  #sobre-nosotros p,
+  #productos .producto p,
+  #contacto p {
+      font-size: 0.875rem; /* Tamaño de texto base más pequeño para legibilidad */
+  }
+
+  /* Espaciado general y padding para secciones */
+  section { /* Esto se aplicará a todas las secciones que no tengan un padding más específico */
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      /* Asegurarse que ocupen todo el ancho, si ya se hizo en 767px, esto no es estrictamente necesario,
+         pero no está de más reiterarlo por seguridad. */
+      border-radius: 0;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 1rem; /* Padding interno para el contenido */
+      padding-right: 1rem;
+  }
+
+  /* Ajustes específicos para #inicio si aún lo necesitas */
+  #inicio {
+      height: 60vh; /* Puedes reducir un poco más la altura si la imagen lo permite */
+      min-height: 350px;
+  }
+
+  /* Formulario de Pedido */
+  #formularioPedido {
+      padding: 1.5rem; /* Menos padding en el formulario */
+  }
+  #formularioPedido label {
+      font-size: 1rem;
+  }
+  #formularioPedido input,
+  #formularioPedido select {
+      padding: 0.7rem 1rem; /* Menos padding en los campos del formulario */
+      font-size: 1rem;
+  }
+  #formularioPedido button {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+  }
+
+  /* Tarjetas de productos */
+  #product-container {
+      gap: 1.5rem; /* Reducir el espacio entre productos */
+  }
+  .producto img {
+      height: 200px; /* Altura de imagen de producto más pequeña */
+  }
+  .producto .p-6 {
+      padding: 1rem; /* Menos padding en las tarjetas de producto */
+  }
+  .producto h3 {
+      font-size: 1.1rem;
+  }
+
+  /* Íconos y enlaces de contacto/redes sociales */
+  .red-link span {
+      font-size: 0.9rem;
+  }
+  .icono-red {
+      width: 40px;
+      height: 40px;
+  }
+
+  .mapa iframe {
+      height: 250px; /* Mapa más compacto */
+  }
+
+  /* Footer */
+  footer {
+      padding: 1.5rem; /* Menos padding en el footer */
+      font-size: 0.85rem;
+  }
+}
