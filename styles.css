@@ -3,7 +3,7 @@
    100% significa que 1rem se basará en el tamaño de fuente por defecto del navegador (usualmente 16px),
    pero lo más importante es que respetará la configuración de accesibilidad del sistema operativo del usuario. */
    html {
-    font-size: 100%;
+    font-size: 106.25%;
 }
 
 body {
@@ -288,7 +288,7 @@ footer {
     /* Ajusta el tamaño de fuente base del HTML para escalar todo en móviles.
        Esto hará que 1rem sea 14.4px (16px * 0.9). Todo se escala un poco. */
     html {
-        font-size: 90%;
+        font-size: 96%;
     }
 
     /* Eliminar padding lateral del content-wrapper en móvil para que las secciones se extiendan de borde a borde */
@@ -426,7 +426,7 @@ footer {
     /* Reducir aún más el tamaño de fuente base del HTML para pantallas muy pequeñas.
        Esto hará que 1rem sea 12.8px (16px * 0.8). Todo se escala más. */
     html {
-        font-size: 80%;
+        font-size: 86%;
     }
 
     /* Header y Logo */
