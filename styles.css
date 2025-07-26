@@ -1,510 +1,528 @@
+/* Definir un tamaño de fuente base para el HTML */
+/* Esto es VITAL para la accesibilidad y el escalado de la fuente por el usuario.
+   100% significa que 1rem se basará en el tamaño de fuente por defecto del navegador (usualmente 16px),
+   pero lo más importante es que respetará la configuración de accesibilidad del sistema operativo del usuario. */
+   html {
+    font-size: 100%;
+}
+
 body {
-  margin: 0; /* Asegura que no haya márgenes por defecto */
-  padding: 0; /* Asegura que no haya padding por defecto */
-  font-family: 'Segoe UI', sans-serif; /* Considera 'Montserrat', 'Roboto', 'Lato' de Google Fonts */
-  background-color: #f0f2f5; /* Un gris más claro para el fondo general */
-  color: #333;
-  overflow-x: hidden; /* Evita el scroll horizontal */
-  width: 100vw; /* Asegura que el body ocupe el 100% del ancho del viewport */
+    margin: 0;
+    padding: 0;
+    /* Considera importar fuentes de Google Fonts para un diseño más pulido, por ejemplo:
+       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+       Luego podrías usar 'Montserrat', sans-serif; aquí. */
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    width: 100vw; /* Asegura que el body ocupe el 100% del ancho del viewport */
+    font-size: 1rem; /* Tamaño de fuente base para el body, escalará con el HTML */
 }
 
+/* content-wrapper: Limita el ancho del contenido principal en pantallas grandes */
 .content-wrapper {
-  max-width: 1600px;
-  margin: 0 auto; /* Centra el wrapper */
-  padding: 0 1rem; /* Pequeño padding a los lados para respiro en escritorio */
+    max-width: 100rem; /* 1600px convertido a rem (1600 / 16 = 100) */
+    margin: 0 auto; /* Centra el wrapper */
+    padding: 0 1rem; /* Pequeño padding a los lados para respiro en escritorio */
 }
-
-/* HEADER - Asegúrate de que las clases Tailwind cubran esto, si no, personaliza aquí */
 header.bg-white {
-  /* Tailwind: bg-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md px-4 */
-  /* Personalizado para asegurar que se vea bien */
-  padding-left: 1.5rem; /* Más espacio a la izquierda */
-  padding-right: 1.5rem; /* Más espacio a la derecha */
-  border-radius: 0.5rem; /* El borde redondeado del header */
+    /* Tailwind: bg-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md px-4 */
+    /* Personalizado para asegurar que se vea bien y usar rem */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 header.bg-white .logo-img {
-  height: 64px; /* Un poco más grande para el logo */
-  width: auto;
-  object-fit: contain; /* Asegura que el logo se vea completo */
+    height: 4rem; /* 64px convertido a rem (64 / 16 = 4) */
+    width: auto;
+    object-fit: contain;
 }
 
-/* Ajustes para el texto del logo (si no usas Tailwind directamente en el HTML) */
 .logo .text-3xl {
-  font-size: 2.25rem;
-  font-weight: 800;
-  line-height: 1;
+    font-size: 2.25rem; /* text-3xl de Tailwind es 36px (36 / 16 = 2.25) */
+    font-weight: 800;
+    line-height: 1;
 }
 
 .logo-orange {
-  color: #ea580c; /* Naranja original */
+    color: #ea580c;
 }
 
-/* NAVEGACIÓN - Para el menú de escritorio */
 #menu li a {
-  padding: 0.75rem 1.25rem; /* Más espacio en los links */
-  display: block; /* Para que todo el padding sea clickable */
+    padding: 0.75rem 1.25rem;
+    display: block;
+    font-size: 1.125rem; /* text-lg de Tailwind es 18px (18 / 16 = 1.125) */
 }
 
-/* PRODUCTOS */
+#inicio {
+    background: url('img/fondo.jpeg') no-repeat center center/cover;
+    height: 90vh;
+    min-height: 31.25rem; /* 500px convertido a rem (500 / 16 = 31.25) */
+    background-attachment: fixed; /* Efecto parallax */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    margin-top: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+#inicio .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    border-radius: 0;
+}
+
+#inicio .relative.z-10 {
+    position: relative;
+    z-index: 1;
+}
+
+#inicio h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem; /* Asumiendo text-7xl o similar en Tailwind, 64px = 4rem */
+    text-shadow: 0.125rem 0.125rem 0.5rem rgba(0,0,0,0.7); /* Convertido a rem */
+}
+
+#inicio p {
+    font-size: 1.5rem; /* Asumiendo text-2xl o similar, 24px = 1.5rem */
+    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.5); /* Convertido a rem */
+}
+
+#sobre-nosotros {
+    background: url('img/fondoDescrip.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding: 5rem 1rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+    border-radius: 0.75rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#sobre-nosotros::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.75rem;
+    z-index: -1;
+}
+
+#sobre-nosotros .max-w-4xl {
+    position: relative;
+    z-index: 2;
+}
+
+#sobre-nosotros h2 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; /* 40px = 2.5rem */
+    text-shadow: 0.0625rem 0.0625rem 0.3125rem rgba(0,0,0,0.7); /* Convertido a rem */
+}
+
+#sobre-nosotros p {
+    color: #f0f0f0;
+    font-size: 1.15rem; /* Mantenemos este valor específico */
+    text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0,0,0,0.5); /* Convertido a rem */
+}
+
+#sobre-nosotros a {
+    color: #4CAF50;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#sobre-nosotros a:hover {
+    color: #66BB6A;
+}
+
 #productos {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #ffffff; /* Blanco puro para la sección de productos */
-  border-radius: 0.75rem; /* Bordes más redondeados */
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08); /* Sombra suave para la sección */
-  margin-top: 2rem; /* Espacio para separar de la sección anterior */
-  margin-bottom: 2rem; /* Espacio para separar de la sección siguiente */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1.5625rem rgba(0,0,0,0.08); /* Convertido a rem */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #productos h2 {
-  margin-bottom: 3rem; /* Más espacio después del título */
+    font-size: 2.5rem; /* 40px = 2.5rem */
+    margin-bottom: 3rem;
 }
 
 #product-container {
-  gap: 2.5rem; /* Espacio un poco mayor entre las tarjetas */
+    gap: 2.5rem;
 }
 
 .producto {
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Sombra más agradable */
-  border: 1px solid #e0e0e0; /* Borde sutil */
-  text-align: left; /* Alinear texto a la izquierda dentro de la tarjeta */
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.08); /* Convertido a rem */
+    border: 0.0625rem solid #e0e0e0; /* 1px = 0.0625rem */
+    text-align: left;
 }
 
 .producto img {
-  height: 256px; /* Asegura que la altura sea consistente */
-  border-bottom: 1px solid #eee; /* Línea sutil debajo de la imagen */
+    height: 16rem; /* 256px = 16rem */
+    border-bottom: 0.0625rem solid #eee; /* 1px = 0.0625rem */
 }
 
 .producto .p-6 {
-  padding: 1.5rem; /* Más padding interno */
+    padding: 1.5rem;
 }
 
 .producto h3 {
-  font-size: 1.35rem; /* Un poco más grande */
-  margin-bottom: 0.75rem; /* Más espacio */
-  color: #2d3748; /* Un gris más oscuro */
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    color: #2d3748;
 }
 
 .producto p {
-  font-size: 0.95rem; /* Ligeramente más grande */
-  color: #555;
-  line-height: 1.5;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
 }
 
-/* FORMULARIO DE PEDIDO */
 #pedidos {
-  background-color: #f7f9fb; /* Fondo muy claro, casi blanco */
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  border-radius: 0.75rem; /* Bordes redondeados para la sección */
-  margin-top: 2rem; /* Espacio para separar de la sección anterior */
-  margin-bottom: 2rem; /* Espacio para separar de la sección siguiente */
+    background-color: #f7f9fb;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 0.75rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #pedidos h2 {
-  margin-bottom: 3rem;
+    font-size: 2.5rem; /* 40px = 2.5rem */
+    margin-bottom: 3rem;
 }
 
 #formularioPedido {
-  padding: 2.5rem; /* Más padding */
-  border-radius: 1rem; /* Bordes más redondeados */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); /* Convertido a rem */
 }
 
 #formularioPedido label {
-  font-size: 1.15rem; /* Más grande */
-  margin-bottom: 0.6rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
 }
 
 #formularioPedido input,
 #formularioPedido select {
-  padding: 0.9rem 1.2rem; /* Más padding */
-  border-radius: 0.5rem; /* Bordes más redondeados */
-  border-color: #cdd4e0; /* Un gris más específico */
+    padding: 0.9rem 1.2rem;
+    border-radius: 0.5rem;
+    border-color: #cdd4e0;
+    font-size: 1rem; /* El tamaño del texto dentro de los campos */
 }
 
 #formularioPedido button {
-  padding: 1rem 1.5rem;
-  border-radius: 9999px; /* rounded-full */
-  font-size: 1.25rem;
-  display: inline-flex; /* Para el icono y el texto juntos */
+    padding: 1rem 1.5rem;
+    border-radius: 9999px; /* rounded-full */
+    font-size: 1.25rem;
+    display: inline-flex;
 }
 
-/* CONTACTO */
 #contacto {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #ffffff;
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  margin-top: 2rem; /* Espacio para separar de la sección anterior */
-  margin-bottom: 2rem; /* Espacio para separar de la sección siguiente */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1.5625rem rgba(0,0,0,0.08); /* Convertido a rem */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #contacto h2 {
-  margin-bottom: 3rem;
+    font-size: 2.5rem; /* 40px = 2.5rem */
+    margin-bottom: 3rem;
 }
 
 #contacto p {
-  font-size: 1.25rem;
-  color: #4a5568;
-  line-height: 1.6;
+    font-size: 1.25rem;
+    color: #4a5568;
+    line-height: 1.6;
 }
 
 /* Redes Sociales y Mapa */
 .red-link span {
-  font-size: 1.1rem;
-  font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .icono-red {
-  width: 48px; /* Íconos un poco más grandes */
-  height: 48px;
+    width: 3rem; /* 48px = 3rem */
+    height: 3rem; /* 48px = 3rem */
 }
 
 .mapa {
-  margin-top: 4rem; /* Más espacio antes del mapa */
+    margin-top: 4rem;
 }
 
 .mapa h3 {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem; /* Un título más grande para el mapa */
+    font-size: 2.5rem; /* 40px = 2.5rem */
+    margin-bottom: 1.5rem;
 }
 
-/* FOOTER */
 footer {
-  padding: 2rem; /* Más padding en el footer */
-  font-size: 1rem;
-  color: #b0b0b0; /* Un gris más claro */
-  background-color: #2c3e50; /* Un gris-azulado oscuro */
-  border-radius: 0.5rem; /* Bordes redondeados para el footer */
-  margin-top: 2rem; /* Espacio para separar de la sección anterior */
+    padding: 2rem;
+    font-size: 1rem;
+    color: #b0b0b0;
+    background-color: #2c3e50;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
 }
 
-/* INICIO (Hero Section) - Estilo por defecto (para escritorio y tabletas) */
-#inicio {
-  background: url('img/fondo.jpeg') no-repeat center center/cover;
-  height: 90vh;
-  min-height: 500px;
-  background-attachment: fixed;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  overflow: hidden;
-  margin-top: 0; /* Asegura que no haya margen superior por defecto */
-  width: 100%; /* Por defecto, ocupa el 100% del content-wrapper */
-  border-radius: 0; /* Asegura que no tenga bordes redondeados, para que ocupe todo el ancho */
+/* Media Query para pantallas estándar de celular (hasta 767px de ancho) */
+@media (max-width: 48rem) { /* 767px ~ 47.9375rem, usaremos 48rem para simplificar y cubrir */
+    /* Ajusta el tamaño de fuente base del HTML para escalar todo en móviles.
+       Esto hará que 1rem sea 14.4px (16px * 0.9). Todo se escala un poco. */
+    html {
+        font-size: 90%;
+    }
+
+    /* Eliminar padding lateral del content-wrapper en móvil para que las secciones se extiendan de borde a borde */
+    .content-wrapper {
+        padding: 0;
+    }
+
+    /* Asegurar que el header se extiende de borde a borde y quitarle los bordes redondeados en móvil */
+    header.bg-white {
+        border-radius: 0;
+        padding-left: 1rem; /* Ajustar padding lateral en móvil */
+        padding-right: 1rem;
+    }
+
+    /* Ajustes específicos para la sección INICIO en móvil */
+    #inicio {
+        background: url('img/fondoCelular.jpg') no-repeat center center/cover; /* Usar la imagen de fondo específica para celular */
+        background-attachment: scroll; /* En móviles, a veces es mejor que el fondo no tenga parallax para rendimiento y UX */
+        height: 70vh;
+        min-height: 25rem; /* 400px = 25rem */
+        width: 100vw; /* CLAVE: Ocupar el 100% del ancho del viewport */
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    #inicio .overlay {
+        border-radius: 0;
+    }
+
+    /* Ajustes para el menú móvil */
+    header.bg-white nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    #mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    #mobile-menu ul {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #mobile-menu li {
+        padding: 1rem 0;
+        width: 80%;
+        border-bottom: 0.0625rem solid #eee; /* 1px = 0.0625rem */
+    }
+
+    #mobile-menu li:last-child {
+        border-bottom: none;
+    }
+
+    #mobile-menu a {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1.3rem; /* Ajustar el tamaño del link en el menú móvil */
+        color: #333;
+        transition: color 0.3s ease;
+    }
+
+    #mobile-menu a:hover {
+        color: #ea580c;
+    }
+
+    /* Ajustes generales de texto y disposición para móviles */
+    #inicio h1 {
+        font-size: 3rem; /* text-5xl o similar, 48px = 3rem */
+    }
+    #inicio p {
+        font-size: 1.25rem; /* text-xl o similar, 20px = 1.25rem */
+    }
+
+    #sobre-nosotros,
+    #productos,
+    #pedidos,
+    #contacto,
+    footer {
+        border-radius: 0; /* Quitar bordes redondeados a las secciones en móvil para full width */
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1rem; /* Añadir un padding interno para el contenido, no para el fondo */
+        padding-right: 1rem;
+    }
+
+    #sobre-nosotros::before {
+        border-radius: 0;
+    }
+
+    #sobre-nosotros h2,
+    #productos h2,
+    #pedidos h2,
+    #contacto h2 {
+        font-size: 2.25rem; /* 36px = 2.25rem */
+    }
+
+    #sobre-nosotros p,
+    #contacto p {
+        font-size: 1rem; /* 16px = 1rem */
+    }
+
+    .redes-sociales {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .red-link {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icono-red {
+        width: 2.5rem; /* 40px = 2.5rem */
+        height: 2.5rem; /* 40px = 2.5rem */
+    }
+
+    .mapa iframe {
+        height: 18.75rem; /* 300px = 18.75rem */
+    }
 }
 
-/* Overlay para la sección de inicio */
-#inicio .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 0;
-  border-radius: 0; /* Asegura que el overlay también sea cuadrado */
-}
+@media (max-width: 30rem) { /* 480px = 30rem */
+    /* Reducir aún más el tamaño de fuente base del HTML para pantallas muy pequeñas.
+       Esto hará que 1rem sea 12.8px (16px * 0.8). Todo se escala más. */
+    html {
+        font-size: 80%;
+    }
 
-/* Contenido dentro de la sección de inicio */
-#inicio .relative.z-10 {
-  position: relative;
-  z-index: 1;
-}
+    /* Header y Logo */
+    header.bg-white .logo-img {
+        height: 2.5rem; /* 40px = 2.5rem */
+    }
+    .logo .text-3xl {
+        font-size: 1.5rem; /* 24px = 1.5rem */
+    }
 
-#inicio h1 {
-  font-family: 'Playfair Display', serif;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-}
+    /* Títulos de sección */
+    #inicio h1 {
+        font-size: 2.5rem; /* 40px = 2.5rem */
+    }
+    #inicio p {
+        font-size: 1rem; /* 16px = 1rem */
+    }
 
-#inicio p {
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
+    #sobre-nosotros h2,
+    #productos h2,
+    #pedidos h2,
+    #contacto h2 {
+        font-size: 1.8rem; /* 28.8px ~ 1.8rem */
+    }
 
-/* SECCIÓN SOBRE NOSOTROS (Descripción) */
-#sobre-nosotros {
-  background: url('img/fondoDescrip.jpg') no-repeat center center/cover;
-  background-attachment: fixed;
-  padding: 5rem 1rem;
-  color: white;
-  position: relative;
-  z-index: 1;
-  border-radius: 0.75rem; /* Bordes redondeados para la sección */
-  margin-top: 2rem; /* Espacio para separar de la sección anterior */
-  margin-bottom: 2rem; /* Espacio para separar de la sección siguiente */
-}
+    /* Párrafos de contenido */
+    #sobre-nosotros p,
+    #productos .producto p,
+    #contacto p {
+        font-size: 0.875rem; /* 14px = 0.875rem */
+    }
 
-#sobre-nosotros::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 0.75rem; /* Bordes redondeados para el overlay de la sección */
-  z-index: -1;
-}
+    /* Espaciado general y padding para secciones */
+    section {
+        padding-top: 2rem; /* Reducir padding aún más */
+        padding-bottom: 2rem;
+        padding-left: 0.75rem; /* Padding interno más pequeño */
+        padding-right: 0.75rem;
+    }
+    
+    /* Ajustes específicos para #inicio */
+    #inicio {
+        height: 50vh; /* Puedes reducir un poco más la altura */
+        min-height: 20rem; /* 320px = 20rem */
+    }
 
-#sobre-nosotros .max-w-4xl {
-  position: relative;
-  z-index: 2;
-}
+    /* Formulario de Pedido */
+    #formularioPedido {
+        padding: 1.5rem;
+    }
+    #formularioPedido label {
+        font-size: 0.9rem;
+    }
+    #formularioPedido input,
+    #formularioPedido select {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+    #formularioPedido button {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
 
-#sobre-nosotros h2 {
-  color: white;
-  font-family: 'Playfair Display', serif;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-}
+    /* Tarjetas de productos */
+    #product-container {
+        gap: 1rem; /* Reducir el espacio entre productos */
+    }
+    .producto img {
+        height: 10rem; /* 160px = 10rem */
+    }
+    .producto .p-6 {
+        padding: 0.75rem;
+    }
+    .producto h3 {
+        font-size: 1rem;
+    }
+    .producto p {
+        font-size: 0.75rem;
+    }
 
-#sobre-nosotros p {
-  color: #f0f0f0;
-  font-size: 1.15rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
+    /* Íconos y enlaces de contacto/redes sociales */
+    .red-link span {
+        font-size: 0.8rem;
+    }
+    .icono-red {
+        width: 1.75rem; /* 28px = 1.75rem */
+        height: 1.75rem;
+    }
 
-#sobre-nosotros a {
-  color: #4CAF50;
-  text-decoration: underline;
-  font-weight: bold;
-}
-#sobre-nosotros a:hover {
-  color: #66BB6A;
-}
+    .mapa iframe {
+        height: 15rem; /* 240px = 15rem */
+    }
 
-
-/* Media Query para pantallas pequeñas (celulares) */
-@media (max-width: 767px) {
-  /* Eliminar padding lateral del content-wrapper en móvil para que las secciones se extiendan de borde a borde */
-  .content-wrapper {
-      padding: 0;
-  }
-
-  /* Asegurar que el header se extiende de borde a borde y quitarle los bordes redondeados en móvil si lo deseas */
-  header.bg-white {
-      border-radius: 0;
-      padding-left: 1rem; /* Ajustar padding lateral en móvil */
-      padding-right: 1rem;
-  }
-
-  /* Ajustes específicos para la sección INICIO en móvil */
-  #inicio {
-      background-attachment: scroll;
-      height: 70vh;
-      min-height: 400px;
-      width: 100vw; /* **CLAVE: Ocupar el 100% del ancho del viewport** */
-      margin-left: 0; /* Asegurar que no haya margen izquierdo */
-      margin-right: 0; /* Asegurar que no haya margen derecho */
-      border-radius: 0; /* Asegurar que no haya bordes redondeados */
-  }
-
-  #inicio .overlay {
-      border-radius: 0; /* Asegurar que el overlay también sea cuadrado en móvil */
-  }
-
-  /* Ajustes para el menú móvil */
-  header.bg-white nav {
-      display: none;
-  }
-
-  .menu-toggle {
-      display: block;
-      margin-right: 1rem;
-  }
-
-  #mobile-menu {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      padding-top: 4rem;
-  }
-
-  #mobile-menu ul {
-      width: 100%;
-      text-align: center;
-      margin-top: 2rem;
-  }
-
-  #mobile-menu li {
-      padding: 1rem 0;
-      width: 80%;
-      border-bottom: 1px solid #eee;
-  }
-
-  #mobile-menu li:last-child {
-      border-bottom: none;
-  }
-
-  #mobile-menu a {
-      display: block;
-      padding: 0.5rem 0;
-      font-size: 1.5rem;
-      color: #333;
-      transition: color 0.3s ease;
-  }
-
-  #mobile-menu a:hover {
-      color: #ea580c;
-  }
-  
-  /* Ajustes generales de texto y disposición para móviles */
-  #inicio h1 {
-      font-size: 3rem;
-  }
-  #inicio p {
-      font-size: 1.25rem;
-  }
-
-  #sobre-nosotros,
-  #productos,
-  #pedidos,
-  #contacto,
-  footer {
-      border-radius: 0; /* Quitar bordes redondeados a las secciones en móvil si queremos full width */
-      margin-left: 0; /* Asegurar que ocupen todo el ancho */
-      margin-right: 0;
-      padding-left: 1rem; /* Añadir un padding interno para el contenido, no para el fondo */
-      padding-right: 1rem;
-  }
-
-  #sobre-nosotros::before { /* También para el overlay de sobre-nosotros */
-      border-radius: 0;
-  }
-
-
-  #sobre-nosotros h2,
-  #productos h2,
-  #pedidos h2,
-  #contacto h2 {
-      font-size: 2.25rem;
-  }
-
-  #sobre-nosotros p,
-  #contacto p {
-      font-size: 1rem;
-  }
-
-  .redes-sociales {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-  }
-
-  .red-link {
-      flex-direction: row;
-      justify-content: center;
-  }
-
-  .mapa iframe {
-      height: 300px;
-  }
-}
-
-/* ========================================= */
-/* NUEVA MEDIA QUERY: Para pantallas extra pequeñas (ej. celulares muy viejos o con baja resolución) */
-/* ========================================= */
-@media (max-width: 480px) {
-  /* Ajustes específicos para pantallas muy pequeñas */
-
-  /* Header y Logo */
-  header.bg-white .logo-img {
-      height: 50px; /* Logo un poco más pequeño */
-  }
-  .logo .text-3xl {
-      font-size: 1.8rem; /* Tamaño del texto del logo ajustado */
-  }
-
-  /* Títulos de sección */
-  #inicio h1 {
-      font-size: 2.5rem; /* Título principal aún más pequeño */
-  }
-  #inicio p {
-      font-size: 1rem; /* Párrafo principal más pequeño */
-  }
-
-  #sobre-nosotros h2,
-  #productos h2,
-  #pedidos h2,
-  #contacto h2 {
-      font-size: 1.8rem; /* Títulos de sección más pequeños */
-  }
-
-  /* Párrafos de contenido */
-  #sobre-nosotros p,
-  #productos .producto p,
-  #contacto p {
-      font-size: 0.875rem; /* Tamaño de texto base más pequeño para legibilidad */
-  }
-
-  /* Espaciado general y padding para secciones */
-  section { /* Esto se aplicará a todas las secciones que no tengan un padding más específico */
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      /* Asegurarse que ocupen todo el ancho, si ya se hizo en 767px, esto no es estrictamente necesario,
-         pero no está de más reiterarlo por seguridad. */
-      border-radius: 0;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 1rem; /* Padding interno para el contenido */
-      padding-right: 1rem;
-  }
-
-  /* Ajustes específicos para #inicio si aún lo necesitas */
-  #inicio {
-      height: 60vh; /* Puedes reducir un poco más la altura si la imagen lo permite */
-      min-height: 350px;
-  }
-
-  /* Formulario de Pedido */
-  #formularioPedido {
-      padding: 1.5rem; /* Menos padding en el formulario */
-  }
-  #formularioPedido label {
-      font-size: 1rem;
-  }
-  #formularioPedido input,
-  #formularioPedido select {
-      padding: 0.7rem 1rem; /* Menos padding en los campos del formulario */
-      font-size: 1rem;
-  }
-  #formularioPedido button {
-      padding: 0.8rem 1rem;
-      font-size: 1rem;
-  }
-
-  /* Tarjetas de productos */
-  #product-container {
-      gap: 1.5rem; /* Reducir el espacio entre productos */
-  }
-  .producto img {
-      height: 200px; /* Altura de imagen de producto más pequeña */
-  }
-  .producto .p-6 {
-      padding: 1rem; /* Menos padding en las tarjetas de producto */
-  }
-  .producto h3 {
-      font-size: 1.1rem;
-  }
-
-  /* Íconos y enlaces de contacto/redes sociales */
-  .red-link span {
-      font-size: 0.9rem;
-  }
-  .icono-red {
-      width: 40px;
-      height: 40px;
-  }
-
-  .mapa iframe {
-      height: 250px; /* Mapa más compacto */
-  }
-
-  /* Footer */
-  footer {
-      padding: 1.5rem; /* Menos padding en el footer */
-      font-size: 0.85rem;
-  }
+    /* Footer */
+    footer {
+        padding: 1rem;
+        font-size: 0.75rem;
+    }
 }
