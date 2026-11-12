@@ -1,260 +1,1924 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AppasAmoblamientos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APPAS Amoblamientos | Diseño y Fabricación de Muebles a Medida en Rafaela</title>
+  <meta name="description" content="APPAS Amoblamientos en Rafaela, Santa Fe. Más de 60 años diseñando y fabricando muebles a medida: cocinas, placares, islas, vestidores y mobiliario personalizado." />
+  <meta name="keywords" content="Appas Amoblamientos, carpintería Rafaela, muebles a medida Rafaela, amoblamientos de cocina, placares a medida, islas de cocina, Omar Appas, Santa Fe" />
+  <meta name="author" content="APPAS Amoblamientos" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#162C6A" />
+
+  <!-- Canonical & Open Graph -->
+  <link rel="canonical" href="https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="APPAS Amoblamientos" />
+  <meta property="og:title" content="APPAS Amoblamientos | Más de 60 años de Carpintería y Diseño a Medida" />
+  <meta property="og:description" content="Transformamos tus ideas en creaciones únicas y duraderas. Cocinas, placares, islas, mesas y amoblamientos integrales fabricados a medida en Rafaela, Santa Fe." />
+  <meta property="og:url" content="https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/" />
+  <meta property="og:image" content="https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/img/imagen6.jpg" />
+  <meta property="og:image:alt" content="Amoblamiento de cocina a medida fabricado por APPAS Amoblamientos" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="APPAS Amoblamientos | Diseño y Fabricación a Medida en Rafaela" />
+  <meta name="twitter:description" content="Más de 60 años fabricando amoblamientos a medida para el hogar y la empresa en Rafaela, Santa Fe." />
+  <meta name="twitter:image" content="https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/img/imagen6.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="apple-touch-icon" href="img/logo.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet Propio (Sin dependencias pesadas) -->
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Schema.org LocalBusiness Structured Data (Datos Verificados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["FurnitureStore", "HomeAndConstructionBusiness"],
+    "name": "APPAS Amoblamientos",
+    "alternateName": "Appas diseño & amoblamientos",
+    "description": "Diseño y fabricación de amoblamientos a medida con más de 60 años de trayectoria en Rafaela, Santa Fe.",
+    "url": "https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/",
+    "logo": "https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/img/logo.jpg",
+    "image": [
+      "https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/img/imagen6.jpg",
+      "https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/img/imagen3.jpg",
+      "https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/img/imagen9.jpg",
+      "https://appasamoblamientos.github.io/Appas_AmoblamientosWeb/img/imagen10.jpg"
+    ],
+    "telephone": "+543492327644",
+    "email": "omarappas@hotmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bv. Lehmann 2606, esquina J. Peterlin",
+      "addressLocality": "Rafaela",
+      "addressRegion": "Santa Fe",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -31.2464116,
+      "longitude": -61.5035219
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Rafaela, Santa Fe"
+    },
+    "sameAs": [
+      "https://www.instagram.com/appas.amoblamientos/",
+      "https://www.facebook.com/appas.carpinteria/photos",
+      "https://www.facebook.com/AppasCarpinteria"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="content-wrapper">
+  <!-- Skip link para accesibilidad por teclado -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
 
-    <!-- HEADER -->
-    <header class="bg-white text-gray-800 py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md px-4">
-      <div class="logo flex items-center">
-          <img src="img/logo.jpg" alt="Logo Appas" class="h-16 w-auto mr-2" /> <div class="text-3xl font-extrabold"> <span class="text-blue-700">Ap</span><span class="logo-orange">p</span><span class="text-blue-700">as</span>
-          </div>
+  <!-- Barra de progreso de lectura global -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Topbar institucional -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-item">
+        <span class="topbar-dot" aria-hidden="true"></span>
+        <span>Más de 60 años de trayectoria en Rafaela, Santa Fe</span>
       </div>
-      <nav class="hidden md:block"> <ul id="menu" class="flex space-x-6">
-              <li><a href="#inicio" class="hover:text-orange-600 text-lg font-medium">Inicio</a></li>
-              <li><a href="#sobre-nosotros" class="hover:text-orange-600 text-lg font-medium">Nosotros</a></li>
-              <li><a href="#productos" class="hover:text-orange-600 text-lg font-medium">Productos</a></li>
-              <li><a href="#pedidos" class="hover:text-orange-600 text-lg font-medium">Pedidos</a></li>
-              <li><a href="#contacto" class="hover:text-orange-600 text-lg font-medium">Contacto</a></li>
-          </ul>
-      </nav>
-      <button class="menu-toggle md:hidden text-gray-800 focus:outline-none" onclick="toggleMenu()">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-      </button>
-  </header>
-  
-  <div id="mobile-menu" class="md:hidden fixed top-0 left-0 w-full h-full bg-white z-20 transform -translate-x-full transition-transform duration-300 ease-in-out">
-      <div class="flex justify-end p-4">
-          <button class="text-gray-800 focus:outline-none" onclick="toggleMenu()">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-          </button>
+      <div class="topbar-links">
+        <a href="https://www.google.com/maps/place/Blvd.+G.+Lehmann+2606,+S2300+Rafaela,+Santa+Fe" target="_blank" rel="noopener noreferrer" class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Bv. Lehmann 2606, esq. J. Peterlin
+        </a>
+        <a href="mailto:omarappas@hotmail.com" class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          omarappas@hotmail.com
+        </a>
+        <a href="https://wa.me/5493492327644?text=%C2%A1Hola%20Omar!%20Me%20contacto%20desde%20la%20web%20de%20APPAS%20Amoblamientos." target="_blank" rel="noopener noreferrer" class="topbar-link topbar-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          3492 327644
+        </a>
       </div>
-      <ul class="flex flex-col items-center space-y-6 text-xl">
-          <li><a href="#inicio" class="hover:text-orange-600" onclick="toggleMenu()">Inicio</a></li>
-          <li><a href="#sobre-nosotros" class="hover:text-orange-600" onclick="toggleMenu()">Nosotros</a></li>
-          <li><a href="#productos" class="hover:text-orange-600" onclick="toggleMenu()">Productos</a></li>
-          <li><a href="#pedidos" class="hover:text-orange-600" onclick="toggleMenu()">Pedidos</a></li>
-          <li><a href="#contacto" class="hover:text-orange-600" onclick="toggleMenu()">Contacto</a></li>
-      </ul>
+    </div>
   </div>
 
-  <header id="inicio" class="relative h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('img/fondo.jpg');">
-    <div class="absolute inset-0 bg-black opacity-50"></div> <div class="relative z-10 text-center px-4">
-        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-wider mb-4">
-            Appas Amoblamientos
-        </h1>
-        <p class="text-xl md:text-2xl font-light max-w-2xl mx-auto">
-            Diseño y Fabricación de Amoblamientos de Alta Calidad
-        </p>
-        <a href="#pedidos" class="mt-8 inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out">
-            Solicitá tu Presupuesto
+  <!-- HEADER STICKY -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand-logo" aria-label="APPAS Amoblamientos - Ir al inicio">
+        <div class="brand-logo-badge">
+          <img src="img/logo.jpg" alt="Logo oficial APPAS diseño & amoblamientos" width="156" height="98" class="brand-logo-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name"><span class="brand-blue">Ap</span><span class="brand-orange">p</span><span class="brand-blue">as</span></span>
+          <span class="brand-tagline">Diseño &amp; Amoblamientos</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <ul class="nav-list" id="menu">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#sobre-nosotros" class="nav-link">Sobre APPAS</a></li>
+          <li><a href="#proceso" class="nav-link">Del Origen al Detalle</a></li>
+          <li><a href="#productos" class="nav-link">Portfolio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#pedidos" class="nav-link">Presupuestos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#pedidos" class="btn btn-primary btn-sm header-cta">
+          <span>Solicitar Presupuesto</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
+        <button type="button" class="menu-toggle" id="menuToggleBtn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú de navegación">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
     </div>
-</header>
-  
-    <!-- SECCIÓN SOBRE NOSOTROS -->
-    <section id="sobre-nosotros" class="py-20 px-4 bg-gray-50 text-center">
-      <div class="max-w-4xl mx-auto">
-          <h2 class="text-4xl font-bold text-gray-800 mb-8">Sobre Nosotros</h2>
-          <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              En Appas Amoblamientos, trabajamos la madera con dedicación y pasión, dando forma a muebles y espacios que combinan innovación, diseño y calidez.
+  </header>
+
+  <!-- MENÚ MÓVIL ACCESIBLE -->
+  <div id="mobile-menu" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menú de navegación móvil">
+    <div class="mobile-drawer-backdrop" id="mobileMenuBackdrop"></div>
+    <div class="mobile-drawer-panel">
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <div class="brand-logo-badge">
+            <img src="img/logo.jpg" alt="Logo APPAS" width="120" height="75" class="brand-logo-img" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name"><span class="brand-blue">Ap</span><span class="brand-orange">p</span><span class="brand-blue">as</span></span>
+            <span class="brand-tagline">Diseño &amp; Amoblamientos</span>
+          </div>
+        </div>
+        <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Cerrar menú">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <nav aria-label="Navegación móvil">
+        <ul class="mobile-nav-list">
+          <li><a href="#inicio" class="mobile-nav-link"><span class="mobile-nav-num">01</span> Inicio</a></li>
+          <li><a href="#sobre-nosotros" class="mobile-nav-link"><span class="mobile-nav-num">02</span> Sobre APPAS</a></li>
+          <li><a href="#proceso" class="mobile-nav-link"><span class="mobile-nav-num">03</span> Del Origen al Detalle</a></li>
+          <li><a href="#productos" class="mobile-nav-link"><span class="mobile-nav-num">04</span> Portfolio de Trabajos</a></li>
+          <li><a href="#servicios" class="mobile-nav-link"><span class="mobile-nav-num">05</span> Servicios a Medida</a></li>
+          <li><a href="#pedidos" class="mobile-nav-link"><span class="mobile-nav-num">06</span> Presupuesto Online</a></li>
+          <li><a href="#contacto" class="mobile-nav-link"><span class="mobile-nav-num">07</span> Contacto y Ubicación</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <a href="#pedidos" class="btn btn-primary btn-block mobile-cta-link">Solicitá tu Presupuesto</a>
+        <div class="mobile-contact-quick">
+          <p><strong>Dirección:</strong> Bv. Lehmann 2606, esq. J. Peterlin — Rafaela</p>
+          <p><strong>WhatsApp / Tel:</strong> 3492 327644</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenido-principal">
+
+    <!-- =====================================================================
+         A. HERO / PORTADA INMERSIVA CINEMATOGRÁFICA + OBRAS REALES DE APPAS
+    ====================================================================== -->
+    <section id="inicio" class="hero-section">
+      <!-- Fondo Atmosférico Cinematográfico (inspirado en seasgeosciences.com) -->
+      <div class="hero-cinema-backdrop" aria-hidden="true">
+        <img
+          src="img/hero-bg-modern.jpg"
+          alt=""
+          width="1408"
+          height="792"
+          class="hero-cinema-img"
+          fetchpriority="high"
+        />
+        <canvas id="heroAmbientCanvas" class="hero-ambient-canvas"></canvas>
+        <div class="hero-cinema-overlay"></div>
+        <div class="hero-bg-grid"></div>
+      </div>
+
+      <div class="container hero-grid">
+        
+        <!-- Columna Editorial / Comercial -->
+        <div class="hero-content reveal-up">
+          <h1 class="hero-title">
+            Diseño y fabricación de <span class="hero-title-accent">amoblamientos a medida</span> con precisión arquitectónica<span class="hero-title-dot">.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            En <strong>APPAS Amoblamientos</strong> trabajamos la madera con dedicación y pasión. Escuchamos tus ideas y las transformamos en cocinas, placares, islas y mobiliario duradero para tu hogar o empresa.
           </p>
-          <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              Con más de 60 años de trayectoria y dos generaciones de experiencia, realizamos trabajos a medida donde cada pieza refleja el resultado de escuchar a nuestros clientes y transformar sus ideas en creaciones únicas y duraderas.
+
+          <div class="hero-cta-group">
+            <a href="#pedidos" class="btn btn-primary btn-lg hero-btn-primary">
+              <span>Solicitá tu Presupuesto</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#proceso" class="btn btn-hero-glass btn-lg">
+              <span>Descubrir el Proceso</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna Showcase Fotográfico -->
+        <div class="hero-showcase reveal-up" style="--reveal-delay: 120ms;">
+          <div class="showcase-frame">
+            <div class="showcase-image-stage">
+              <img
+                src="img/imagen6.jpg"
+                alt="Revestimiento y bajo mesada de cocina en L sobre mampostería fabricado por APPAS Amoblamientos"
+                width="1440"
+                height="1440"
+                id="heroMainImage"
+                class="showcase-main-img"
+              />
+              <div class="showcase-caption-overlay">
+                <div class="showcase-caption-text">
+                  <p class="showcase-caption-category" id="heroShowcaseMaterial">Melamina texturada veta horizontal · Perfil gola</p>
+                  <h2 class="showcase-caption-title" id="heroShowcaseTitle">Revestimiento de mesada de cocina en "L"</h2>
+                  <p class="showcase-caption-desc" id="heroShowcaseDesc">Mesada de cocina en "L" sobre mampostería con cajonera y puertas a medida.</p>
+                </div>
+                <a href="#productos" class="showcase-explore-btn" aria-label="Ver galería completa de trabajos">
+                  <span>Ver Portfolio</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Selector rápido de proyectos en portada -->
+            <div class="showcase-thumbs" role="tablist" aria-label="Trabajos destacados de APPAS">
+              <button type="button" class="showcase-thumb active" role="tab" aria-selected="true"
+                data-img="img/imagen6.jpg"
+                data-material="Melamina veta horizontal · Sobre mampostería"
+                data-title="Revestimiento de mesada de cocina en &quot;L&quot;"
+                data-desc="Mesada de cocina en &quot;L&quot; sobre mampostería adaptada al milímetro.">
+                <img src="img/imagen6.jpg" alt="Miniatura Bajo mesada de cocina en L" width="80" height="80" />
+                <div class="thumb-meta">
+                  <strong>Cocina en "L"</strong>
+                  <span>Sobre mampostería</span>
+                </div>
+              </button>
+
+              <button type="button" class="showcase-thumb" role="tab" aria-selected="false"
+                data-img="img/imagen3.jpg"
+                data-material="Cuerpo laminado blanco · Tapa madera lustrada"
+                data-title="Isla de cocina laminada con tapa lustrada"
+                data-desc="Isla central a medida con cajones telescópicos y estantería integrada.">
+                <img src="img/imagen3.jpg" alt="Miniatura Isla de cocina con tapa lustrada" width="80" height="80" />
+                <div class="thumb-meta">
+                  <strong>Isla de Cocina</strong>
+                  <span>Tapa lustrada</span>
+                </div>
+              </button>
+
+              <button type="button" class="showcase-thumb" role="tab" aria-selected="false"
+                data-img="img/imagen9.jpg"
+                data-material="Interior melamina blanca · Puertas corredizas"
+                data-title="Placard de embutir a medida"
+                data-desc="Placard integral con puertas corredizas, cajonera y distribución interior completa.">
+                <img src="img/imagen9.jpg" alt="Miniatura Placard de embutir con puertas corredizas" width="80" height="80" />
+                <div class="thumb-meta">
+                  <strong>Placard Integral</strong>
+                  <span>Puertas corredizas</span>
+                </div>
+              </button>
+
+              <button type="button" class="showcase-thumb" role="tab" aria-selected="false"
+                data-img="img/imagen10.jpg"
+                data-material="Madera lustrada de alto brillo · 8 personas"
+                data-title="Mesa principal para comedor"
+                data-desc="Mesa lustrada para 8 personas con bases sólidas y terminación artesanal.">
+                <img src="img/imagen10.jpg" alt="Miniatura Mesa para comedor de 8 personas" width="80" height="80" />
+                <div class="thumb-meta">
+                  <strong>Mesa Comedor</strong>
+                  <span>Para 8 personas</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Técnica Inferior de Portada (Inspirada en seasgeosciences.com) -->
+      <div class="container hero-bottom-hud">
+        <div class="hero-hud-coords">
+          <span class="hud-coord-dot" aria-hidden="true"></span>
+          <span>RAFAELA, SANTA FE · 31°15'S 61°29'W</span>
+          <span class="hud-coord-sep" aria-hidden="true">//</span>
+          <span>TALLER PROPIO: BV. LEHMANN 2606</span>
+        </div>
+        <a href="#sobre-nosotros" class="hero-scroll-cue" aria-label="Desplazarse hacia abajo para conocer más sobre APPAS">
+          <span>EXPLORAR RECORRIDO</span>
+          <span class="scroll-cue-mouse" aria-hidden="true">
+            <span class="scroll-cue-wheel"></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         B. SOBRE APPAS (HISTORIA Y +60 AÑOS DE TRAYECTORIA)
+    ====================================================================== -->
+    <section id="sobre-nosotros" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          
+          <!-- Columna Izquierda: Identidad e Historia -->
+          <div class="about-narrative reveal-up">
+            <h2 class="section-title">
+              Más de <span class="text-highlight-blue">60 años de trayectoria</span> trabajando la madera con pasión.
+            </h2>
+
+            <p class="about-lead">
+              En <strong>Appas Amoblamientos</strong>, trabajamos la madera con dedicación y pasión, dando forma a muebles y espacios que combinan innovación, diseño y calidez.
+            </p>
+
+            <p class="about-body">
+              Con más de 60 años de trayectoria en <strong>Rafaela, Santa Fe</strong>, realizamos trabajos a medida donde cada pieza refleja el resultado de escuchar a nuestros clientes y transformar sus ideas en creaciones únicas y duraderas.
+            </p>
+
+            <p class="about-body">
+              Creamos muebles para tu hogar, empresa o cualquier necesidad específica, cuidando desde la selección de placas y maderas macizas en nuestro taller de <strong>Bv. Lehmann 2606</strong> hasta el ajuste final de cada herraje.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </div>
+                <div>
+                  <h3>Diseño Escuchando al Cliente</h3>
+                  <p>Cada proyecto parte de la necesidad real de tu espacio, optimizando guardado, circulación y estética.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></svg>
+                </div>
+                <div>
+                  <h3>Oficio y Materiales Nobles</h3>
+                  <p>Combinamos la nobleza del trabajo carpintero tradicional con materiales modernos (melaminas texturadas, MDF, madera compensada y maciza).</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+                </div>
+                <div>
+                  <h3>Atención Directa y Personalizada</h3>
+                  <p>Trato directo con Omar Appas y equipo en nuestro taller de Rafaela para presupuestar, definir materiales y acompañar tu proyecto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Composición Visual -->
+          <div class="about-visual reveal-up" style="--reveal-delay: 140ms;">
+            <div class="about-bento">
+              <div class="about-brand-card">
+                <img src="img/logo.jpg" alt="Isotipo y logotipo oficial Appas diseño & amoblamientos" width="220" height="138" class="about-logo-featured" />
+                <div class="about-brand-meta">
+                  <p>Más de seis décadas construyendo confianza en hogares y comercios de Rafaela y la región.</p>
+                </div>
+              </div>
+
+              <figure class="about-photo-card about-photo-workshop">
+                <img src="img/imagen5.jpg" alt="Mueble combinado de dormitorio fabricado en el taller de APPAS Amoblamientos" width="720" height="720" loading="lazy" />
+                <figcaption>
+                  <span class="photo-tag">Bv. Lehmann 2606 · Rafaela</span>
+                  <strong>Mueble combinado en laminado Lino Terra</strong>
+                </figcaption>
+              </figure>
+
+              <figure class="about-photo-card about-photo-installed">
+                <img src="img/imagen10.jpg" alt="Mesa de comedor lustrada para 8 personas fabricada por APPAS" width="720" height="720" loading="lazy" />
+                <figcaption>
+                  <span class="photo-tag photo-tag-orange">Lustre artesanal</span>
+                  <strong>Mesa de comedor lustrada para 8 personas</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         C. EXPERIENCIA NARRATIVA DIFERENCIAL: "DEL ORIGEN AL DETALLE"
+         Scroll narrativo con pieza persistente que evoluciona en 5 etapas
+    ====================================================================== -->
+    <section id="proceso" class="process-narrative-section" aria-labelledby="proceso-heading">
+      <div class="container process-intro-header reveal-up">
+        <div class="process-intro-split">
+          <h2 id="proceso-heading" class="section-title section-title-light">
+            DEL ORIGEN <span class="text-highlight-orange">AL DETALLE</span>
+          </h2>
+          <p class="process-intro-desc">
+            Acompañá el recorrido de una pieza desde la selección de las vetas en bruto hasta el amoblamiento instalado. Deslizá para ver cómo la materia prima se transforma en plano técnico, corte preciso, ensamblaje y el mueble terminado para tu espacio.
           </p>
-          <p class="text-lg text-gray-700 leading-relaxed">
-              Creamos muebles para tu hogar, empresa o cualquier necesidad específica. <a href="#contacto" class="text-blue-700 hover:text-blue-800 font-semibold">Contáctanos</a> para más información o solicitar un presupuesto.
+        </div>
+      </div>
+
+      <!-- Contenedor de Scroll Narrativo -->
+      <div class="container process-scroll-layout" id="processScrollContainer">
+        
+        <!-- COLUMNA STICKY: LIENZO VISUAL PERSISTENTE -->
+        <div class="process-sticky-stage">
+          <div class="blueprint-stage" id="blueprintStage" data-active-stage="1">
+            
+            <!-- Cabecera del Monitor Técnico -->
+            <div class="blueprint-hud-top">
+              <div class="hud-status">
+                <span class="hud-led" aria-hidden="true"></span>
+                <span class="hud-code" id="stageHudCode">ETAPA 01 / 05 · MATERIA PRIMA</span>
+              </div>
+              <div class="hud-progress-pill">
+                <span>AVANCE</span>
+                <strong id="stageProgressPercent">20%</strong>
+              </div>
+            </div>
+
+            <!-- Barra de progreso continua del proceso -->
+            <div class="blueprint-progress-track" aria-hidden="true">
+              <div class="blueprint-progress-fill" id="blueprintProgressFill" style="width: 20%;"></div>
+            </div>
+
+            <!-- Navegación rápida por etapas (accesible por clic y teclado) -->
+            <div class="blueprint-stage-tabs" role="tablist" aria-label="Etapas del proceso de fabricación">
+              <button type="button" class="stage-tab active" data-stage-btn="1" role="tab" aria-selected="true">01. Materia</button>
+              <button type="button" class="stage-tab" data-stage-btn="2" role="tab" aria-selected="false">02. Diseño</button>
+              <button type="button" class="stage-tab" data-stage-btn="3" role="tab" aria-selected="false">03. Corte</button>
+              <button type="button" class="stage-tab" data-stage-btn="4" role="tab" aria-selected="false">04. Ensamble</button>
+              <button type="button" class="stage-tab" data-stage-btn="5" role="tab" aria-selected="false">05. Resultado</button>
+            </div>
+
+            <!-- Lienzo Central donde la pieza evoluciona -->
+            <div class="blueprint-canvas-wrap">
+              <!-- Fondo de textura real de madera para Etapa 01 (img/fondoDescrip.jpg) -->
+              <div class="stage-wood-backdrop" id="stageWoodBackdrop" style="background-image: url('img/fondoDescrip.jpg');" aria-hidden="true"></div>
+
+              <!-- Grilla arquitectónica técnica -->
+              <div class="stage-blueprint-grid" aria-hidden="true"></div>
+
+              <!-- SVG Persistente Evolutivo (Pieza de madera -> Plano técnico -> Mecanizado -> Ensamblaje -> Mueble) -->
+              <svg class="evolving-wood-svg" id="evolvingWoodSvg" viewBox="0 0 680 420" role="img" aria-label="Ilustración técnica interactiva de la evolución de un mueble APPAS desde el tablón de madera hasta la isla y mesada terminada">
+                <defs>
+                  <!-- Gradientes institucionales y de madera -->
+                  <linearGradient id="woodRawTop" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#D99B66" />
+                    <stop offset="50%" stop-color="#B87642" />
+                    <stop offset="100%" stop-color="#8F5528" />
+                  </linearGradient>
+                  <linearGradient id="woodRawSide" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#7A441E" />
+                    <stop offset="100%" stop-color="#5B3012" />
+                  </linearGradient>
+                  <linearGradient id="appasBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1D4ED8" stop-opacity="0.35" />
+                    <stop offset="100%" stop-color="#162C6A" stop-opacity="0.85" />
+                  </linearGradient>
+                  <linearGradient id="melaminaWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF" />
+                    <stop offset="100%" stop-color="#E2E8F0" />
+                  </linearGradient>
+                  <linearGradient id="melaminaSide" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#CBD5E1" />
+                    <stop offset="100%" stop-color="#94A3B8" />
+                  </linearGradient>
+                  <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#EA580C" flood-opacity="0.65" />
+                  </filter>
+                </defs>
+
+                <!-- Ejes de referencia isométricos permanentes -->
+                <g class="svg-layer svg-axes" stroke="#3B82F6" stroke-opacity="0.28" stroke-dasharray="4 6" stroke-width="1">
+                  <line x1="340" y1="30" x2="340" y2="390" />
+                  <line x1="70" y1="220" x2="610" y2="220" />
+                  <line x1="120" y1="95" x2="560" y2="345" />
+                  <line x1="560" y1="95" x2="120" y2="345" />
+                </g>
+
+                <!-- =========================================================
+                     CAPA ETAPA 01: MATERIA PRIMA (Tablón noble con vetas)
+                ========================================================== -->
+                <g class="svg-stage-layer stage-layer-1">
+                  <!-- Sombra base -->
+                  <polygon points="150,245 370,135 540,215 320,325" fill="#050B1C" opacity="0.55" />
+                  <!-- Cara superior del tablón -->
+                  <polygon points="150,210 370,100 530,175 310,285" fill="url(#woodRawTop)" stroke="#FDBA74" stroke-width="1.5" />
+                  <!-- Canto frontal izquierdo -->
+                  <polygon points="150,210 310,285 310,320 150,245" fill="url(#woodRawSide)" stroke="#FDBA74" stroke-width="1.2" />
+                  <!-- Canto frontal derecho (testa con anillos) -->
+                  <polygon points="310,285 530,175 530,210 310,320" fill="#9A5B2C" stroke="#FDBA74" stroke-width="1.2" />
+                  <!-- Vetas orgánicas dibujadas sobre la madera -->
+                  <path d="M185,205 Q290,155 380,120" fill="none" stroke="#5B3012" stroke-width="2" opacity="0.65" />
+                  <path d="M215,225 Q325,180 425,138" fill="none" stroke="#5B3012" stroke-width="2.2" opacity="0.55" />
+                  <path d="M255,248 Q350,192 470,158" fill="none" stroke="#5B3012" stroke-width="1.8" opacity="0.6" />
+                  <ellipse cx="355" cy="188" rx="18" ry="8" transform="rotate(-24 355 188)" fill="none" stroke="#5B3012" stroke-width="2" opacity="0.7" />
+                  <!-- Etiqueta técnica de selección -->
+                  <g transform="translate(120, 72)">
+                    <rect x="0" y="0" width="185" height="32" rx="6" fill="#0B1739" stroke="#EA580C" stroke-width="1.5" />
+                    <text x="12" y="20" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">SELECCIÓN: VETA &amp; DENSIDAD</text>
+                  </g>
+                </g>
+
+                <!-- =========================================================
+                     CAPA ETAPA 02: DISEÑO Y PLANO TÉCNICO ACOTADO
+                ========================================================== -->
+                <g class="svg-stage-layer stage-layer-2">
+                  <!-- Estructura wireframe en Azul/Cian y Naranja APPAS -->
+                  <polygon points="160,260 360,160 520,235 320,335" fill="url(#appasBlueGrad)" stroke="#60A5FA" stroke-width="1.8" />
+                  <!-- Módulos internos proyectados -->
+                  <polygon points="160,145 360,45 520,120 320,220" fill="rgba(29, 78, 216, 0.18)" stroke="#93C5FD" stroke-width="2" />
+                  <!-- Pilares verticales del plano -->
+                  <line x1="160" y1="145" x2="160" y2="260" stroke="#93C5FD" stroke-width="2" />
+                  <line x1="360" y1="45" x2="360" y2="160" stroke="#60A5FA" stroke-width="1.5" stroke-dasharray="5 4" />
+                  <line x1="520" y1="120" x2="520" y2="235" stroke="#93C5FD" stroke-width="2" />
+                  <line x1="320" y1="220" x2="320" y2="335" stroke="#EA580C" stroke-width="2.5" />
+                  <!-- Divisiones de cajonera y puertas en el plano -->
+                  <line x1="240" y1="182" x2="240" y2="297" stroke="#60A5FA" stroke-width="1.6" />
+                  <line x1="420" y1="167" x2="420" y2="282" stroke="#60A5FA" stroke-width="1.6" />
+                  <line x1="320" y1="258" x2="420" y2="208" stroke="#EA580C" stroke-width="1.8" />
+                  <line x1="320" y1="296" x2="420" y2="246" stroke="#EA580C" stroke-width="1.8" />
+
+                  <!-- Líneas de Cota Naranja APPAS -->
+                  <g stroke="#EA580C" stroke-width="1.8">
+                    <line x1="140" y1="130" x2="345" y2="28" />
+                    <circle cx="140" cy="130" r="3.5" fill="#EA580C" />
+                    <circle cx="345" cy="28" r="3.5" fill="#EA580C" />
+                    <line x1="542" y1="120" x2="542" y2="235" />
+                    <circle cx="542" cy="120" r="3.5" fill="#EA580C" />
+                    <circle cx="542" cy="235" r="3.5" fill="#EA580C" />
+                  </g>
+                  <rect x="195" y="52" width="110" height="24" rx="4" fill="#EA580C" />
+                  <text x="206" y="68" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">LARGO A MEDIDA</text>
+
+                  <rect x="554" y="165" width="96" height="24" rx="4" fill="#162C6A" stroke="#60A5FA" stroke-width="1.2" />
+                  <text x="564" y="181" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">ALTO: 850mm</text>
+                </g>
+
+                <!-- =========================================================
+                     CAPA ETAPA 03: FABRICACIÓN, CORTE Y MECANIZADO
+                ========================================================== -->
+                <g class="svg-stage-layer stage-layer-3">
+                  <!-- Placas cortadas con líneas de sierra activas -->
+                  <!-- Lateral Izquierdo -->
+                  <polygon points="150,140 215,108 215,230 150,262" fill="url(#melaminaSide)" stroke="#FFFFFF" stroke-width="1.5" />
+                  <!-- Piso y divisores -->
+                  <polygon points="220,255 385,172 495,225 330,308" fill="url(#melaminaWhite)" stroke="#60A5FA" stroke-width="1.5" />
+                  <!-- Divisor central -->
+                  <polygon points="315,150 380,118 380,240 315,272" fill="url(#melaminaSide)" stroke="#FFFFFF" stroke-width="1.5" />
+                  <!-- Tapa superior en proceso de escuadrado -->
+                  <polygon points="155,112 365,15 525,88 315,185" fill="url(#woodRawTop)" stroke="#FDBA74" stroke-width="2" />
+
+                  <!-- Línea láser / guía de corte CNC y escuadradora -->
+                  <line x1="110" y1="195" x2="565" y2="105" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="8 6" filter="url(#glowOrange)" />
+                  
+                  <!-- Símbolo de disco de corte / fresado -->
+                  <g transform="translate(335, 148)">
+                    <circle cx="0" cy="0" r="24" fill="rgba(234, 88, 12, 0.18)" stroke="#EA580C" stroke-width="2" stroke-dasharray="4 3" />
+                    <circle cx="0" cy="0" r="8" fill="#EA580C" />
+                  </g>
+
+                  <g transform="translate(395, 298)">
+                    <rect x="0" y="0" width="225" height="32" rx="6" fill="#0B1739" stroke="#60A5FA" stroke-width="1.5" />
+                    <text x="12" y="20" fill="#93C5FD" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">CORTE · CANTOS · PERFORADO</text>
+                  </g>
+                </g>
+
+                <!-- =========================================================
+                     CAPA ETAPA 04: ENSAMBLAJE PROGRESIVO Y HERRAJES
+                ========================================================== -->
+                <g class="svg-stage-layer stage-layer-4">
+                  <!-- Cuerpo principal ya ensamblado -->
+                  <polygon points="165,145 365,50 515,120 315,215" fill="#1E293B" stroke="#94A3B8" stroke-width="1.5" />
+                  <!-- Costado visible izquierdo (estantería abierta tipo imagen3) -->
+                  <polygon points="165,145 315,215 315,335 165,265" fill="url(#melaminaWhite)" stroke="#94A3B8" stroke-width="1.5" />
+                  <polygon points="180,175 298,230 298,275 180,220" fill="#CBD5E1" stroke="#64748B" stroke-width="1" />
+                  <!-- Frente derecho con puertas y cajón telescópico desplazándose -->
+                  <polygon points="315,215 515,120 515,240 315,335" fill="url(#melaminaSide)" stroke="#FFFFFF" stroke-width="1.5" />
+                  
+                  <!-- Puertas inferiores -->
+                  <polygon points="325,255 415,212 415,322 325,365" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5" transform="translate(0, -35)" />
+                  <polygon points="422,208 505,168 505,278 422,318" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5" transform="translate(0, -35)" />
+
+                  <!-- Cajón superior extraído mostrando corredera telescópica -->
+                  <g transform="translate(28, 18)">
+                    <polygon points="320,192 435,137 465,152 350,207" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" />
+                    <polygon points="350,207 465,152 465,182 350,237" fill="#F1F5F9" stroke="#EA580C" stroke-width="2" />
+                    <!-- Guía telescópica metálica -->
+                    <line x1="292" y1="198" x2="350" y2="222" stroke="#EA580C" stroke-width="4" />
+                  </g>
+
+                  <!-- Tapa superior descendiendo con flechas de encastre -->
+                  <g transform="translate(0, -24)">
+                    <polygon points="145,135 365,32 535,112 315,215" fill="url(#woodRawTop)" stroke="#FFFFFF" stroke-width="2" />
+                    <polygon points="145,135 315,215 315,228 145,148" fill="url(#woodRawSide)" />
+                    <polygon points="315,215 535,112 535,125 315,228" fill="#5B3012" />
+                  </g>
+
+                  <!-- Vectores de unión naranja -->
+                  <g stroke="#EA580C" stroke-width="2" stroke-dasharray="4 3">
+                    <line x1="315" y1="190" x2="315" y2="215" />
+                    <line x1="165" y1="120" x2="165" y2="145" />
+                    <line x1="515" y1="95" x2="515" y2="120" />
+                  </g>
+                </g>
+
+                <!-- =========================================================
+                     CAPA ETAPA 05: RESULTADO FINAL (Mueble sólido terminado)
+                ========================================================== -->
+                <g class="svg-stage-layer stage-layer-5">
+                  <!-- Sombra arquitectónica de piso -->
+                  <polygon points="140,285 365,175 545,255 320,365" fill="#040917" opacity="0.7" />
+                  <!-- Cuerpo blanco purísimo terminado -->
+                  <polygon points="165,150 315,220 315,340 165,270" fill="url(#melaminaWhite)" stroke="#CBD5E1" stroke-width="1.5" />
+                  <!-- Nichos estantería lateral -->
+                  <polygon points="180,175 300,232 300,275 180,218" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2" />
+                  <polygon points="180,228 300,285 300,325 180,268" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2" />
+                  <!-- Frente modulado con cajones y puertas -->
+                  <polygon points="315,220 515,125 515,245 315,340" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" />
+                  <line x1="315" y1="255" x2="515" y2="160" stroke="#94A3B8" stroke-width="1.8" />
+                  <line x1="415" y1="208" x2="415" y2="292" stroke="#94A3B8" stroke-width="1.5" />
+                  <!-- Tiradores minimalistas -->
+                  <line x1="395" y1="198" x2="435" y2="179" stroke="#162C6A" stroke-width="3.5" stroke-linecap="round" />
+
+                  <!-- Tapa lustrada de madera maciza encastrada al milímetro -->
+                  <polygon points="145,142 365,38 535,118 315,222" fill="url(#woodRawTop)" stroke="#FDBA74" stroke-width="2" />
+                  <polygon points="145,142 315,222 315,236 145,156" fill="url(#woodRawSide)" />
+                  <polygon points="315,222 535,118 535,132 315,236" fill="#5B3012" />
+                  <!-- Brillo del lustre en la tapa -->
+                  <polygon points="210,112 365,38 430,68 275,142" fill="#FFFFFF" opacity="0.18" />
+                </g>
+              </svg>
+
+              <!-- Tarjeta Fotográfica contextual de cada etapa -->
+              <div class="stage-real-photo-card" id="stageRealPhotoCard">
+                <img src="img/imagen1.jpg" alt="Proceso de trabajo en el taller de APPAS" width="320" height="320" id="stageRealPhotoImg" />
+                <div class="stage-real-photo-info">
+                  <strong id="stageRealTitle">Pino compensado y maderas seleccionadas</strong>
+                  <p id="stageRealCaption">Trabajamos con placas y maderas nobles seleccionadas para cada ambiente.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pie del Monitor Técnico -->
+            <div class="blueprint-hud-bottom">
+              <div class="hud-spec">
+                <span class="hud-spec-label">ESPECIFICACIÓN</span>
+                <strong class="hud-spec-val" id="stageSpecText">Selección de vetas, placas de melamina, MDF y madera maciza</strong>
+              </div>
+              <a href="#pedidos" class="hud-cta-link">
+                <span>Cotizar mi proyecto</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- COLUMNA SCROLLABLE: 5 ETAPAS NARRATIVAS -->
+        <div class="process-steps-column">
+          
+          <!-- ETAPA 01 -->
+          <article class="process-step-card is-active" data-stage="1" tabindex="0">
+            <div class="step-card-header">
+              <span class="step-number">01</span>
+              <span class="step-pill">ORIGEN Y NOBLEZA</span>
+            </div>
+            <h3 class="step-title">MATERIA PRIMA</h3>
+            <p class="step-description">
+              Todo gran amoblamiento comienza con la elección correcta del material según el uso real del espacio. Seleccionamos <strong>madera maciza, madera compensada, MDF enchapado y placas de melamina texturada</strong> de primera calidad.
+            </p>
+            <ul class="step-checklist">
+              <li>Evaluación de resistencia a la humedad y al uso diario (cocinas, baños o dormitorios).</li>
+              <li>Variedad de texturas: desde vetas naturales de pino y maderas lustradas hasta acabados Lino Terra y Cemento.</li>
+              <li>Asesoramiento honesto para equilibrar estética, durabilidad y presupuesto.</li>
+            </ul>
+            <div class="step-photo-preview">
+              <img src="img/fondoDescrip.jpg" alt="Textura y vetas de madera natural utilizada en carpintería" width="120" height="120" loading="lazy" />
+              <div>
+                <span>Textura y Veta</span>
+                <strong>Nobleza desde el primer corte</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- ETAPA 02 -->
+          <article class="process-step-card" data-stage="2" tabindex="0">
+            <div class="step-card-header">
+              <span class="step-number">02</span>
+              <span class="step-pill">PRECISIÓN A MEDIDA</span>
+            </div>
+            <h3 class="step-title">DISEÑO</h3>
+            <p class="step-description">
+              Escuchamos tus ideas y relevamos las medidas reales de tu ambiente. Transformamos cada requerimiento en un <strong>planteo técnico a medida</strong> que aprovecha cada centímetro disponible, incluso sobre mampostería existente o esquinas en "L".
+            </p>
+            <ul class="step-checklist">
+              <li>Distribución inteligente de cajoneras, estantes regulables, barrales de colgado y puertas corredizas.</li>
+              <li>Adaptación milimétrica a electrodomésticos, bachas, mesadas de granito y vigas.</li>
+              <li>Definición de tiradores, perfiles de aluminio y herrajes antes de pasar al taller.</li>
+            </ul>
+            <div class="step-photo-preview">
+              <img src="img/imagen5.jpg" alt="Mueble combinado de tocador y guardado diseñado a medida por APPAS" width="120" height="120" loading="lazy" />
+              <div>
+                <span>Dormitorio a medida</span>
+                <strong>Módulo integral tocador + placard Lino Terra</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- ETAPA 03 -->
+          <article class="process-step-card" data-stage="3" tabindex="0">
+            <div class="step-card-header">
+              <span class="step-number">03</span>
+              <span class="step-pill">OFICIO EN TALLER</span>
+            </div>
+            <h3 class="step-title">FABRICACIÓN</h3>
+            <p class="step-description">
+              En nuestro propio taller de <strong>Bv. Lehmann 2606 (Rafaela)</strong> ejecutamos el corte, escuadrado, pegado de cantos, cepillado y lustrado artesanal, combinando maquinaria precisa con más de 60 años de oficio carpintero.
+            </p>
+            <ul class="step-checklist">
+              <li>Cortes limpios a escuadra y terminación prolija en cada canto y unión.</li>
+              <li>Trabajos de lustre artesanal de alto brillo para tapas de islas y mesas de comedor.</li>
+              <li>Control de calidad pieza por pieza durante todo el mecanizado.</li>
+            </ul>
+            <div class="step-photo-preview">
+              <img src="img/imagen4.jpg" alt="Bajo mesada en L laminado cemento en proceso de fabricación en el taller de APPAS" width="120" height="120" loading="lazy" />
+              <div>
+                <span>Taller APPAS</span>
+                <strong>Bajo mesada en "L" laminado cemento</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- ETAPA 04 -->
+          <article class="process-step-card" data-stage="4" tabindex="0">
+            <div class="step-card-header">
+              <span class="step-number">04</span>
+              <span class="step-pill">ESTRUCTURA Y HERRAJES</span>
+            </div>
+            <h3 class="step-title">ENSAMBLAJE</h3>
+            <p class="step-description">
+              Las piezas se unen progresivamente para dar solidez estructural al mueble. Pre-armamos y verificamos en taller el deslizamiento suave de <strong>correderas telescópicas, bisagras metálicas y sistemas corredizos</strong>.
+            </p>
+            <ul class="step-checklist">
+              <li>Estructuras firmes y escuadradas pensadas para soportar décadas de uso continuo.</li>
+              <li>Herrajes seleccionados para apertura fluida de cajones profundos y puertas de gran porte.</li>
+              <li>Verificación integral en taller antes de coordinar la entrega e instalación.</li>
+            </ul>
+            <div class="step-photo-preview">
+              <img src="img/imagen1.jpg" alt="Mesada de pino compensado ensamblada en el taller de APPAS" width="120" height="120" loading="lazy" />
+              <div>
+                <span>Ensamblaje en taller</span>
+                <strong>Estructura en pino compensado y cajonera</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- ETAPA 05 -->
+          <article class="process-step-card" data-stage="5" tabindex="0">
+            <div class="step-card-header">
+              <span class="step-number">05</span>
+              <span class="step-pill">ENTREGA E INSTALACIÓN</span>
+            </div>
+            <h3 class="step-title">RESULTADO</h3>
+            <p class="step-description">
+              El proceso culmina cuando el amoblamiento cobra vida en tu hogar o comercio. Un mueble pensado al detalle y duradero que eleva el valor y la comodidad de tu espacio todos los días.
+            </p>
+            <ul class="step-checklist">
+              <li>Instalación prolija y nivelación final en obra (mesadas sobre mampostería, islas y placares de embutir).</li>
+              <li>Combinación armónica entre funcionalidad moderna y calidez artesanal.</li>
+              <li>Respaldo directo de una empresa familiar rafaelina con más de 60 años de nombre propio.</li>
+            </ul>
+            <div class="step-photo-preview step-photo-gallery-mini">
+              <img src="img/imagen3.jpg" alt="Isla de cocina terminada con tapa lustrada por APPAS" width="90" height="90" loading="lazy" />
+              <img src="img/imagen6.jpg" alt="Bajo mesada de cocina instalado por APPAS" width="90" height="90" loading="lazy" />
+              <img src="img/imagen9.jpg" alt="Placard de embutir terminado por APPAS" width="90" height="90" loading="lazy" />
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         D. PORTFOLIO EDITORIAL DE TRABAJOS
+    ====================================================================== -->
+    <section id="productos" class="section portfolio-section">
+      <div class="container">
+        
+        <div class="portfolio-header reveal-up">
+          <div>
+            <h2 class="section-title">
+              Trabajos realizados en <span class="text-highlight-blue">nuestro taller y clientes</span>.
+            </h2>
+          </div>
+          <p class="portfolio-lead">
+            Conocé algunos de los amoblamientos de cocina, placares, islas y mesas que fabricamos a medida en <strong>APPAS Amoblamientos</strong>. Filtrá por categoría, explorá los detalles en pantalla completa o cotizá un diseño similar para tu espacio.
           </p>
-      </div>
-  </section>
-  
+        </div>
 
-    <!-- PRODUCTOS CON IMÁGENES DESCARGADAS -->
-    <section id="productos" class="py-20 px-4 text-center bg-white rounded-md">
-      <h2 class="text-4xl font-bold text-gray-800 mb-12">Nuestros Productos</h2>
-      <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen1.jpg" alt="Mesada de cocina" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Mesada de cocina</h3>
-                  <p class="text-gray-600 text-sm">Mesada de pino compensado sin lustre</p>
-              </div>
+        <!-- Barra de Filtros Dinámicos -->
+        <div class="portfolio-controls reveal-up">
+          <div class="filter-pills-group" role="tablist" aria-label="Filtrar trabajos por categoría">
+            <button type="button" class="filter-btn active" data-filter="todos" role="tab" aria-selected="true">
+              Todos los trabajos <span class="filter-count">20</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="cocinas" role="tab" aria-selected="false">
+              Cocinas <span class="filter-count">6</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="islas" role="tab" aria-selected="false">
+              Mesadas e Islas <span class="filter-count">3</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="placares" role="tab" aria-selected="false">
+              Placares y Dormitorios <span class="filter-count">6</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="mesas" role="tab" aria-selected="false">
+              Mesas y Living <span class="filter-count">3</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="banos" role="tab" aria-selected="false">
+              Baños y Tocadores <span class="filter-count">2</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="especiales" role="tab" aria-selected="false">
+              Comercial y Especiales <span class="filter-count">3</span>
+            </button>
           </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen2.jpg" alt="Bahiut 1" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Mueble multiuso</h3>
-                  <p class="text-gray-600 text-sm">Mueble laminado para baño</p>
-              </div>
-          </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen3.jpg" alt="Mesa ratona" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Isla de cocina</h3>
-                  <p class="text-gray-600 text-sm">Isla laminada con tapa lustrada</p>
-              </div>
-          </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen4.jpg" alt="Mesa ratona" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Mesada de cocina</h3>
-                  <p class="text-gray-600 text-sm">Mesada en "L", laminada cemento</p>
-              </div>
-          </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen5.jpg" alt="Mesa ratona" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Mueble combinado</h3>
-                  <p class="text-gray-600 text-sm">Tocador y espacio de guardado para dormitorio, laminado lino terra</p>
-              </div>
-          </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen6.jpg" alt="Mesa ratona" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Revestimiento de mesada de cocina</h3>
-                  <p class="text-gray-600 text-sm">Mesada de cocina en "L" sobre mampostería</p>
-              </div>
-          </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen7.jpg" alt="Mesa ratona" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Isla de cocina</h3>
-                  <p class="text-gray-600 text-sm">Isla laminada con desayunador</p>
-              </div>
-          </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen8.jpg" alt="Mesa ratona" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Isla desayunero</h3>
-                  <p class="text-gray-600 text-sm">Isla con estantes y barra desayunadora</p>
-              </div>
-          </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen9.jpg" alt="Mesa ratona" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Placard de embutir</h3>
-                  <p class="text-gray-600 text-sm">Placard a medida con puertas corredizas</p>
-              </div>
-          </div>
-          <div class="producto bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
-              <img src="img/imagen10.jpg" alt="Mesa ratona" class="w-full h-64 object-cover" />
-              <div class="p-6">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Mesa para comedor</h3>
-                  <p class="text-gray-600 text-sm">Mesa lustrada para "8" personas</p>
-              </div>
-          </div>
-      </div>
-  </section>
+        </div>
 
-    <!-- FORMULARIO DE PEDIDO -->
-    <section id="pedidos" class="py-20 px-4 bg-gray-100 text-center">
-      <h2 class="text-4xl font-bold text-gray-800 mb-12">Solicitá tu Presupuesto Personalizado</h2>
-      <form id="formularioPedido" class="max-w-xl mx-auto p-8 bg-white rounded-lg shadow-xl">
-          <div class="mb-6 text-left">
-              <label for="tipoMadera" class="block text-gray-700 text-lg font-medium mb-2">Tipo de Material:</label>
-              <select id="tipoMadera" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg">
-                  <option value="Melamina">Melamina</option>
-                  <option value="MaderaMaciza">Madera Maciza</option>
-                  <option value="MaderaComprensada">Madera Compensada</option>
-                  <option value="MDF/Enchapado">MDF / Enchapado</option>
-                  <option value="Otro">Otro (Especificar)</option>
-              </select>
-          </div>
-  
-          <div id="otroTipoMaderaContainer" class="mb-6 text-left" style="display: none;">
-              <label for="otroTipoMadera" class="block text-gray-700 text-lg font-medium mb-2">Indique qué otro material:</label>
-              <input type="text" id="otroTipoMadera" name="otroTipoMadera" placeholder="Ej: Bambú, Haya" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg" />
-          </div>
-  
-          <div class="mb-6 text-left">
-              <label for="tipoSector" class="block text-gray-700 text-lg font-medium mb-2">Ubicación del Mueble:</label>
-              <select id="tipoSector" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg">
-                  <option value="Dormitorio">Dormitorio</option>
-                  <option value="Cocina">Cocina</option>
-                  <option value="Lavadero">Lavadero</option>
-                  <option value="Baño">Baño</option>
-                  <option value="Oficina">Oficina</option>
-                  <option value="Comedor/Living">Comedor / Living</option>
-                  <option value="Comercio">Comercio</option>
-                  <option value="Otro">Otro (Especificar)</option>
-              </select>
-          </div>
-  
-          <div id="otroSectorContainer" class="mb-6 text-left" style="display: none;">
-              <label for="otroSector" class="block text-gray-700 text-lg font-medium mb-2">Indique qué otro sector:</label>
-              <input type="text" id="otroSector" name="otroSector" placeholder="Ej: Garage, Jardín de Invierno" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg" />
-          </div>
-  
-          <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-xl transition duration-300 ease-in-out flex items-center justify-center">
-              <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
-              Enviar a WhatsApp
-          </button>
-      </form>
-  </section>
+        <!-- Grilla Editorial Asimétrica -->
+        <div id="product-container" class="portfolio-editorial-grid" aria-live="polite">
 
-    <section id="contacto" class="py-20 px-4 text-center bg-white rounded-md">
-      <h2 class="text-4xl font-bold text-gray-800 mb-12">Contactanos</h2>
-      <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-          ¡Contactanos y diseñemos juntos el mueble de tus sueños! Estamos listos para escuchar tus ideas y hacerlas realidad.
-      </p>
-  
-      <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
-          <div class="flex items-center text-gray-700 text-lg">
-              <img src="img/gmail.webp" alt="Email" class="w-8 h-8 mr-3" /> <span>omarappas@hotmail.com</span>
+          <!-- Cocina Instalada en L -->
+          <article class="portfolio-item item-featured" data-category="cocinas" data-index="0">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen6.jpg" alt="Revestimiento de mesada de cocina en L sobre mampostería fabricado por APPAS Amoblamientos" width="1440" height="1440" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Cocinas</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="0" aria-label="Ampliar imagen de Revestimiento de mesada de cocina">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina veta horizontal · Perfil gola negro</span>
+                </div>
+                <h3 class="portfolio-title">Revestimiento de mesada de cocina</h3>
+                <p class="portfolio-desc">Mesada de cocina en "L" sobre mampostería, con puertas de abrir y cajonera lateral fabricadas a medida.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="0">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Cocina" data-quote-material="Melamina" data-quote-item="Revestimiento / Bajo mesada de cocina en L">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Isla con tapa lustrada -->
+          <article class="portfolio-item item-tall" data-category="islas cocinas" data-index="1">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen3.jpg" alt="Isla de cocina laminada con tapa de madera lustrada fabricada por APPAS" width="1440" height="1440" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-orange">Mesadas e Islas</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="1" aria-label="Ampliar imagen de Isla de cocina con tapa lustrada">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina blanca + Tapa madera lustrada</span>
+                </div>
+                <h3 class="portfolio-title">Isla de cocina</h3>
+                <p class="portfolio-desc">Isla laminada con tapa lustrada, cajones con correderas telescópicas y estantería lateral.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="1">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Cocina" data-quote-material="MaderaMaciza" data-quote-item="Isla de cocina laminada con tapa lustrada">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placard de embutir -->
+          <article class="portfolio-item" data-category="placares" data-index="2">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen9.jpg" alt="Placard de embutir a medida con puertas corredizas fabricado por APPAS" width="1080" height="1080" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Placares y Dormitorios</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="2" aria-label="Ampliar imagen de Placard de embutir">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina + Perfilería de aluminio</span>
+                </div>
+                <h3 class="portfolio-title">Placard de embutir</h3>
+                <p class="portfolio-desc">Placard a medida con puertas corredizas, cajonera interior, estantes y sector de colgado.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="2">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Dormitorio" data-quote-material="Melamina" data-quote-item="Placard de embutir con puertas corredizas">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mesada en L cemento -->
+          <article class="portfolio-item" data-category="cocinas" data-index="3">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen4.jpg" alt="Mesada de cocina en L laminada cemento fabricada por APPAS" width="1440" height="1440" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Cocinas</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="3" aria-label="Ampliar imagen de Mesada de cocina en L laminada cemento">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina acabado Cemento · Tirador perfil</span>
+                </div>
+                <h3 class="portfolio-title">Mesada de cocina</h3>
+                <p class="portfolio-desc">Mesada en "L", laminada cemento con cajonera amplia y módulos de guardado inferior.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="3">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Cocina" data-quote-material="Melamina" data-quote-item="Bajo mesada en L laminado cemento">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mueble combinado dormitorio -->
+          <article class="portfolio-item item-featured" data-category="placares" data-index="4">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen5.jpg" alt="Mueble combinado tocador y espacio de guardado para dormitorio laminado lino terra" width="1440" height="1440" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Placares y Dormitorios</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="4" aria-label="Ampliar imagen de Mueble combinado para dormitorio">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Laminado Lino Terra · Diseño integral</span>
+                </div>
+                <h3 class="portfolio-title">Mueble combinado</h3>
+                <p class="portfolio-desc">Tocador y espacio de guardado para dormitorio, laminado lino terra con cajonera, placard y estantes.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="4">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Dormitorio" data-quote-material="Melamina" data-quote-item="Mueble combinado tocador y placard">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mesa para comedor 8 personas -->
+          <article class="portfolio-item item-featured" data-category="mesas" data-index="5">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen10.jpg" alt="Mesa lustrada para comedor de 8 personas fabricada por APPAS Amoblamientos" width="1529" height="1529" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-orange">Mesas y Comedor</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="5" aria-label="Ampliar imagen de Mesa para comedor de 8 personas">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Madera y enchapado con lustre de alto brillo</span>
+                </div>
+                <h3 class="portfolio-title">Mesa para comedor</h3>
+                <p class="portfolio-desc">Mesa lustrada para "8" personas con doble base estructural y terminación espejo.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="5">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Comedor/Living" data-quote-material="MDF/Enchapado" data-quote-item="Mesa de comedor lustrada para 8 personas">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Isla laminada con desayunador -->
+          <article class="portfolio-item" data-category="islas cocinas" data-index="6">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen7.jpg" alt="Isla de cocina laminada con desayunador y cajones fabricada por APPAS" width="1080" height="1080" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-orange">Mesadas e Islas</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="6" aria-label="Ampliar imagen de Isla de cocina laminada">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina blanca · Correderas telescópicas</span>
+                </div>
+                <h3 class="portfolio-title">Isla de cocina</h3>
+                <p class="portfolio-desc">Isla laminada con desayunador, triple cajonera superior y amplio guardado inferior con estantes.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="6">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Cocina" data-quote-material="Melamina" data-quote-item="Isla de cocina laminada con desayunador">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mueble multiuso para baño -->
+          <article class="portfolio-item" data-category="banos" data-index="7">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen2.jpg" alt="Mueble multiuso laminado para baño fabricado por APPAS" width="1440" height="1440" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Baños y Multiuso</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="7" aria-label="Ampliar imagen de Mueble multiuso para baño">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina texturada · Guías telescópicas</span>
+                </div>
+                <h3 class="portfolio-title">Mueble multiuso</h3>
+                <p class="portfolio-desc">Mueble laminado para baño u organizador vertical con nicho superior, dos cajones y puerta inferior.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="7">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Baño" data-quote-material="Melamina" data-quote-item="Mueble multiuso organizador para baño">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Isla desayunero con banquetas -->
+          <article class="portfolio-item" data-category="islas" data-index="8">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen8.jpg" alt="Isla desayunero con estantes y barra desayunadora fabricada por APPAS" width="762" height="762" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-orange">Mesadas e Islas</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="8" aria-label="Ampliar imagen de Isla desayunero">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina combinada + Banquetas en madera</span>
+                </div>
+                <h3 class="portfolio-title">Isla desayunero</h3>
+                <p class="portfolio-desc">Isla con estantes y barra desayunadora acompañada por banquetas altas de madera.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="8">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Cocina" data-quote-material="Melamina" data-quote-item="Isla desayunero con barra">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mesada de pino compensado -->
+          <article class="portfolio-item" data-category="cocinas" data-index="9">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen1.jpg" alt="Mesada de cocina de pino compensado sin lustre fabricada por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Cocinas</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="9" aria-label="Ampliar imagen de Mesada de pino compensado">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Madera de pino compensado natural</span>
+                </div>
+                <h3 class="portfolio-title">Mesada de cocina</h3>
+                <p class="portfolio-desc">Mesada de pino compensado sin lustre, ideal para personalizar su acabado final o entonado.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="9">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Cocina" data-quote-material="MaderaComprensada" data-quote-item="Mesada de cocina en madera compensada">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mesa de madera con vidrio repartido (imagen11) -->
+          <article class="portfolio-item item-tall" data-category="mesas" data-index="10">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen11.jpg" alt="Mesa de madera maciza con tapa de vidrio repartido fabricada por APPAS Amoblamientos" width="472" height="820" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-orange">Mesas y Living</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="10" aria-label="Ampliar imagen de Mesa de madera con vidrio repartido">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Madera maciza lustrada · Tapa 6 paños de vidrio</span>
+                </div>
+                <h3 class="portfolio-title">Mesa con vidrio repartido</h3>
+                <p class="portfolio-desc">Mesa principal en madera maciza lustrada con estructura superior de 6 paños de vidrio repartido.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="10">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Comedor/Living" data-quote-material="MaderaMaciza" data-quote-item="Mesa de madera maciza con vidrio repartido">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Modular y panel de TV varillado (imagen13) -->
+          <article class="portfolio-item item-featured" data-category="mesas" data-index="11">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen13.jpg" alt="Modular y panel de TV en madera enchapada con varillado vertical fabricado por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-orange">Mesas y Living</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="11" aria-label="Ampliar imagen de Modular y panel de TV">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Enchapado en madera natural · Detalles varillados</span>
+                </div>
+                <h3 class="portfolio-title">Modular y panel de TV</h3>
+                <p class="portfolio-desc">Mueble de living integral con panel trasero varillado, cajoneras laterales, puertas y estantes centrales.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="11">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Comedor/Living" data-quote-material="MDF/Enchapado" data-quote-item="Modular y panel de TV con varillado">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Amoblamiento integral de cocina negro (imagen16) -->
+          <article class="portfolio-item item-featured" data-category="cocinas" data-index="12">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen16.jpg" alt="Bajo mesada y alacena de cocina completa en melamina negra fabricada por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Cocinas</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="12" aria-label="Ampliar imagen de Bajo mesada y alacena de cocina">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina negra texturada · Tiradores perfil aluminio</span>
+                </div>
+                <h3 class="portfolio-title">Bajo mesada y alacena completa</h3>
+                <p class="portfolio-desc">Equipamiento integral de cocina con bajo mesada, cajonera y alacena superior a medida con módulo sobre heladera.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="12">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Cocina" data-quote-material="Melamina" data-quote-item="Bajo mesada y alacena de cocina completa">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placard de piso a techo con puertas corredizas (imagen14) -->
+          <article class="portfolio-item" data-category="placares" data-index="13">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen14.jpg" alt="Placard de piso a techo con puertas corredizas e interior completo fabricado por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Placares y Dormitorios</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="13" aria-label="Ampliar imagen de Placard de piso a techo">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina visón e interior blanco · Perfilería aluminio</span>
+                </div>
+                <h3 class="portfolio-title">Placard de piso a techo</h3>
+                <p class="portfolio-desc">Placard con puertas corredizas e interior distribuido con baulera superior, barral, cajonera y columna de estantes.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="13">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Dormitorio" data-quote-material="Melamina" data-quote-item="Placard de piso a techo con puertas corredizas">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mueble tocador y vanitory moldurado (imagen19) -->
+          <article class="portfolio-item" data-category="banos" data-index="14">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen19.jpg" alt="Mueble vanitory y tocador moldurado blanco a medida con columnas espejadas fabricado por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Baños y Tocadores</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="14" aria-label="Ampliar imagen de Mueble tocador y vanitory moldurado">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Laqueado blanco · Frentes moldurados y espejos</span>
+                </div>
+                <h3 class="portfolio-title">Tocador y guardado moldurado</h3>
+                <p class="portfolio-desc">Conjunto diseñado a medida entre ventanas con columnas espejadas, cajoneras molduradas y bajo mesada.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="14">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Baño" data-quote-material="MDF/Enchapado" data-quote-item="Mueble tocador / vanitory moldurado a medida">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cama cucheta en L con cajonera (imagen12) -->
+          <article class="portfolio-item" data-category="placares" data-index="15">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen12.jpg" alt="Cama cucheta en L con cajonera de 4 cajones y escalera fabricada por APPAS" width="414" height="232" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Placares y Dormitorios</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="15" aria-label="Ampliar imagen de Cama cucheta en L con cajonera">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Terminación gris · Cajonera de 4 cajones integrada</span>
+                </div>
+                <h3 class="portfolio-title">Cama cucheta en "L" con cajonera</h3>
+                <p class="portfolio-desc">Cama superpuesta funcional con baranda superior, escalera firme y módulo lateral de 4 cajones amplios.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="15">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Dormitorio" data-quote-material="MDF/Enchapado" data-quote-item="Cama cucheta en L con cajonera integrada">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Escritorio a medida con cajonera (imagen15) -->
+          <article class="portfolio-item" data-category="placares especiales" data-index="16">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen15.jpg" alt="Escritorio a medida combinado en melamina blanca y tapa madera con cajonera fabricado por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Dormitorios y Estudio</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="16" aria-label="Ampliar imagen de Escritorio a medida con cajonera">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina blanca + Tapa veta madera · Guías telescópicas</span>
+                </div>
+                <h3 class="portfolio-title">Escritorio a medida</h3>
+                <p class="portfolio-desc">Escritorio para dormitorio u oficina con cajón central deslizable y cajonera lateral de 3 cajones profundos.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="16">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Oficina" data-quote-material="Melamina" data-quote-item="Escritorio a medida con cajonera">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cama cucheta en madera natural (imagen17) -->
+          <article class="portfolio-item" data-category="placares" data-index="17">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen17.jpg" alt="Cama cucheta en madera natural con barandas fabricada por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-blue">Placares y Dormitorios</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="17" aria-label="Ampliar imagen de Cama cucheta en madera natural">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Madera natural maciza · Barandas protectoras</span>
+                </div>
+                <h3 class="portfolio-title">Cama cucheta con barandas</h3>
+                <p class="portfolio-desc">Cama doble superpuesta en madera natural con barandas de protección en ambos niveles y estructura reforzada.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="17">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Dormitorio" data-quote-material="MaderaMaciza" data-quote-item="Cama cucheta en madera natural con barandas">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Estanterías exhibidoras para local comercial (imagen18) -->
+          <article class="portfolio-item" data-category="especiales" data-index="18">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen18.jpg" alt="Estanterías flotantes exhibidoras para local comercial fabricadas por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-orange">Mobiliario Comercial</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="18" aria-label="Ampliar imagen de Estanterías para local comercial">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Melamina texturada clara · Fijación oculta</span>
+                </div>
+                <h3 class="portfolio-title">Exhibidores para local comercial</h3>
+                <p class="portfolio-desc">Estantes flotantes de espesor grueso fabricados a medida para exhibición comercial de calzado e indumentaria.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="18">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Comercio" data-quote-material="Melamina" data-quote-item="Estanterías exhibidoras para local comercial">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Puerta corrediza estilo granero (imagen20) -->
+          <article class="portfolio-item" data-category="especiales" data-index="19">
+            <div class="portfolio-card">
+              <div class="portfolio-media">
+                <img src="img/imagen20.jpg" alt="Puerta corrediza estilo granero laqueada blanca con herraje de hierro negro fabricada por APPAS" width="414" height="414" loading="lazy" />
+                <div class="portfolio-badges">
+                  <span class="p-badge p-badge-orange">Trabajos Especiales</span>
+                </div>
+                <button type="button" class="portfolio-zoom-btn" data-lightbox-index="19" aria-label="Ampliar imagen de Puerta corrediza estilo granero">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta-row">
+                  <span class="portfolio-material">Madera laqueada blanca · Kit riel granero en hierro negro</span>
+                </div>
+                <h3 class="portfolio-title">Puerta corrediza estilo granero</h3>
+                <p class="portfolio-desc">Puerta corrediza a medida con riel superior y carros de hierro negro a la vista, ideal para dividir ambientes con estilo.</p>
+                <div class="portfolio-actions">
+                  <button type="button" class="btn-text-link" data-lightbox-index="19">Ver en detalle</button>
+                  <button type="button" class="btn-quote-item" data-quote-sector="Otro" data-quote-material="MaderaMaciza" data-quote-item="Puerta corrediza estilo granero a medida">Cotizar similar →</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Banner de Redes Sociales para ver nuevos trabajos -->
+        <div class="portfolio-social-callout reveal-up">
+          <div class="callout-content">
+            <h3>¿Querés ver más proyectos recientes de nuestro taller?</h3>
+            <p>Seguinos en nuestras redes oficiales donde compartimos entregas e instalaciones en Rafaela y la zona.</p>
           </div>
-          <div class="flex items-center text-gray-700 text-lg">
-              <img src="img/telefono.png" alt="Teléfono" class="w-8 h-8 mr-3" /> <span>3492327644</span>
+          <div class="callout-buttons">
+            <a href="https://www.instagram.com/appas.amoblamientos/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>@appas.amoblamientos</span>
+            </a>
+            <a href="https://www.facebook.com/appas.carpinteria/photos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              <span>Facebook Fotos</span>
+            </a>
           </div>
-          <div class="flex items-center text-gray-700 text-lg">
-              <img src="img/Localid.png" alt="Ubicación" class="w-8 h-8 mr-3" /> <span>Rafaela, Santa Fe - Argentina</span>
-          </div>
+        </div>
+
       </div>
-      <p class="text-xl text-gray-700 mb-8">
-          Dirección: Bv. Lehmann 2606, esquina J. Peterlin
-      </p>
-  
-      <div class="redes-sociales flex justify-center gap-6 md:gap-10 mb-12 flex-wrap">
-          <a href="https://www.instagram.com/appas.amoblamientos" target="_blank" class="red-link flex flex-col items-center group">
-              <img src="img/intagram.png" alt="Instagram" class="w-12 h-12 mb-2 transform group-hover:scale-110 transition-transform duration-300" />
-              <span class="text-lg text-gray-700 group-hover:text-blue-700 font-medium">@appas.amoblamientos</span>
+    </section>
+
+    <!-- =====================================================================
+         E. SERVICIOS Y SOLUCIONES A MEDIDA
+    ====================================================================== -->
+    <section id="servicios" class="section services-section">
+      <div class="container">
+        <div class="services-header reveal-up">
+          <h2 class="section-title">
+            Amoblamientos diseñados para <span class="text-highlight-blue">cada ambiente de tu vida</span>.
+          </h2>
+          <p class="services-subtitle">
+            Fabricamos equipamiento a medida tanto para viviendas familiares como para oficinas, estudios y locales comerciales.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <article class="service-card reveal-up">
+            <div class="service-card-top">
+              <span class="service-num">01</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+            </div>
+            <h3>Cocinas, Bajo Mesadas e Islas</h3>
+            <p>
+              Diseño y fabricación de bajo mesadas rectos o en "L", alacenas, revestimientos sobre mampostería, islas centrales con tapa de madera lustrada y barras desayunadoras.
+            </p>
+            <ul class="service-tags">
+              <li>Melamina texturada</li>
+              <li>Pino compensado</li>
+              <li>Perfilería aluminio</li>
+            </ul>
+            <a href="#pedidos" class="service-cta-link" data-quote-sector="Cocina">Presupuestar Cocina →</a>
+          </article>
+
+          <article class="service-card reveal-up" style="--reveal-delay: 80ms;">
+            <div class="service-card-top">
+              <span class="service-num">02</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M12 2v20"/><path d="M9 10v4"/><path d="M15 10v4"/></svg>
+              </div>
+            </div>
+            <h3>Placares, Vestidores y Dormitorios</h3>
+            <p>
+              Placares de embutir de piso a techo con puertas corredizas, interiores personalizados con cajoneras, zapateros, estantes y muebles combinados con tocador o escritorio.
+            </p>
+            <ul class="service-tags">
+              <li>Puertas corredizas</li>
+              <li>Interiores a medida</li>
+              <li>Módulos combinados</li>
+            </ul>
+            <a href="#pedidos" class="service-cta-link" data-quote-sector="Dormitorio">Presupuestar Dormitorio →</a>
+          </article>
+
+          <article class="service-card reveal-up" style="--reveal-delay: 160ms;">
+            <div class="service-card-top">
+              <span class="service-num">03</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h18"/><path d="M5 10v10"/><path d="M19 10v10"/><path d="M2 6h20v4H2z"/></svg>
+              </div>
+            </div>
+            <h3>Mesas, Comedor y Living</h3>
+            <p>
+              Mesas principales de comedor lustradas para 6, 8 o más personas, bahiuts, modulares de TV y muebles de apoyo que aportan presencia y calidez al hogar.
+            </p>
+            <ul class="service-tags">
+              <li>Lustre artesanal</li>
+              <li>Madera maciza</li>
+              <li>MDF / Enchapado</li>
+            </ul>
+            <a href="#pedidos" class="service-cta-link" data-quote-sector="Comedor/Living">Presupuestar Comedor →</a>
+          </article>
+
+          <article class="service-card reveal-up" style="--reveal-delay: 240ms;">
+            <div class="service-card-top">
+              <span class="service-num">04</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+            </div>
+            <h3>Baños, Lavaderos, Oficinas y Comercios</h3>
+            <p>
+              Vanitorys, columnas organizadoras multiuso para baño y lavadero, escritorios operativos, mostradores de atención y equipamiento comercial a medida.
+            </p>
+            <ul class="service-tags">
+              <li>Baños y Lavaderos</li>
+              <li>Oficinas</li>
+              <li>Locales comerciales</li>
+            </ul>
+            <a href="#pedidos" class="service-cta-link" data-quote-sector="Comercio">Presupuestar Proyecto →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         F. PRESUPUESTOS (CONFIGURADOR INTERACTIVO PARA WHATSAPP)
+    ====================================================================== -->
+    <section id="pedidos" class="section quote-section">
+      <div class="container">
+        <div class="quote-layout">
+          
+          <!-- Columna Informativa -->
+          <div class="quote-aside reveal-up">
+            <h2 class="section-title">
+              Configurá tu consulta y recibí <span class="text-highlight-orange">asesoramiento por WhatsApp</span>.
+            </h2>
+            <p class="quote-aside-desc">
+              Completá los datos de tu proyecto. El sistema armará automáticamente un mensaje claro y detallado para enviarlo directo al WhatsApp de <strong>Omar Appas (3492 327644)</strong>, sin intermediarios ni registros.
+            </p>
+
+            <div class="quote-steps-guide">
+              <div class="q-guide-item">
+                <span class="q-guide-num">1</span>
+                <div>
+                  <strong>Elegí ambiente y material</strong>
+                  <p>Indicá para qué sector es el mueble y el tipo de madera o placa que preferís.</p>
+                </div>
+              </div>
+              <div class="q-guide-item">
+                <span class="q-guide-num">2</span>
+                <div>
+                  <strong>Sumá medidas e ideas</strong>
+                  <p>Agregá medidas aproximadas o seleccioná si tenés fotos/planos para enviar luego en el chat.</p>
+                </div>
+              </div>
+              <div class="q-guide-item">
+                <span class="q-guide-num">3</span>
+                <div>
+                  <strong>Enviá directo a WhatsApp</strong>
+                  <p>Tus datos no se guardan en ningún servidor externo: pasan directo de tu navegador a tu conversación con APPAS.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vista previa en vivo del mensaje de WhatsApp -->
+            <div class="whatsapp-preview-card" aria-live="polite">
+              <div class="wa-preview-header">
+                <span class="wa-preview-dot" aria-hidden="true"></span>
+                <span>Vista previa del mensaje para WhatsApp</span>
+              </div>
+              <p class="wa-preview-body" id="whatsappMessagePreview">
+                ¡Hola Omar! Estoy interesado/a en solicitar un presupuesto para un amoblamiento de Melamina en el sector Dormitorio. ¿Podrían asesorarme?
+              </p>
+            </div>
+          </div>
+
+          <!-- Columna Formulario Renovado (Mantiene IDs compatibles y amplía campos requeridos) -->
+          <div class="quote-form-wrapper reveal-up" style="--reveal-delay: 120ms;">
+            <form id="formularioPedido" class="quote-form" novalidate>
+              <div class="form-header">
+                <h3>Solicitá tu Presupuesto Personalizado</h3>
+                <p>Los campos con <span class="req-star" aria-hidden="true">*</span> son necesarios para armar tu consulta.</p>
+              </div>
+
+              <!-- Fila 1: Nombre y Teléfono -->
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="clienteNombre">Tu Nombre <span class="optional-tag">(opcional)</span></label>
+                  <input type="text" id="clienteNombre" name="clienteNombre" placeholder="Ej: Juan Pérez" autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="clienteTelefono">Tu Teléfono / Localidad <span class="optional-tag">(opcional)</span></label>
+                  <input type="text" id="clienteTelefono" name="clienteTelefono" placeholder="Ej: Rafaela / 3492..." autocomplete="tel" />
+                </div>
+              </div>
+
+              <!-- Fila 2: Ambiente (tipoSector) y Material (tipoMadera) -->
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="tipoSector">Tipo de Ambiente / Ubicación <span class="req-star">*</span></label>
+                  <select id="tipoSector" name="tipoSector" required>
+                    <option value="Cocina">Cocina</option>
+                    <option value="Dormitorio">Dormitorio</option>
+                    <option value="Comedor/Living">Comedor / Living</option>
+                    <option value="Baño">Baño</option>
+                    <option value="Lavadero">Lavadero</option>
+                    <option value="Oficina">Oficina</option>
+                    <option value="Comercio">Comercio / Local</option>
+                    <option value="Otro">Otro (Especificar)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="tipoMadera">Material Preferido <span class="req-star">*</span></label>
+                  <select id="tipoMadera" name="tipoMadera" required>
+                    <option value="Melamina">Melamina (Blanca / Texturada)</option>
+                    <option value="MaderaMaciza">Madera Maciza</option>
+                    <option value="MaderaComprensada">Madera Compensada</option>
+                    <option value="MDF/Enchapado">MDF / Enchapado Lustrado</option>
+                    <option value="A definir con asesoramiento">Necesito asesoramiento</option>
+                    <option value="Otro">Otro (Especificar)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Contenedores dinámicos "Otro" (Compatibilidad total con lógica anterior + mejoras) -->
+              <div id="otroSectorContainer" class="form-group dynamic-field" style="display: none;">
+                <label for="otroSector">Indicá qué otro ambiente o sector <span class="req-star">*</span></label>
+                <input type="text" id="otroSector" name="otroSector" placeholder="Ej: Quincho, Galería, Estudio" />
+              </div>
+
+              <div id="otroTipoMaderaContainer" class="form-group dynamic-field" style="display: none;">
+                <label for="otroTipoMadera">Indicá qué otro material buscás <span class="req-star">*</span></label>
+                <input type="text" id="otroTipoMadera" name="otroTipoMadera" placeholder="Ej: Pino, Paraíso, Combinado" />
+              </div>
+
+              <!-- Fila 3: Tipo de Mueble y Medidas Aproximadas -->
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="tipoMueble">Tipo de Mueble</label>
+                  <input type="text" id="tipoMueble" name="tipoMueble" placeholder="Ej: Bajo mesada en L, Isla, Placard..." />
+                </div>
+                <div class="form-group">
+                  <label for="medidasAprox">Medidas Aproximadas <span class="optional-tag">(si las tenés)</span></label>
+                  <input type="text" id="medidasAprox" name="medidasAprox" placeholder="Ej: 2.40m x 1.60m, alto 0.85m" />
+                </div>
+              </div>
+
+              <!-- Fila 4: Presupuesto orientativo / Etapa del proyecto -->
+              <div class="form-group">
+                <label for="presupuestoOrientativo">Etapa o Presupuesto Orientativo <span class="optional-tag">(opcional)</span></label>
+                <select id="presupuestoOrientativo" name="presupuestoOrientativo">
+                  <option value="">Seleccionar opción (opcional)...</option>
+                  <option value="Quiero cotizar para fabricar a corto plazo">Quiero cotizar para fabricar a corto plazo</option>
+                  <option value="Estoy en obra / remodelación y planificando medidas">Estoy en obra / remodelación y planificando medidas</option>
+                  <option value="Busco presupuesto orientativo para comparar opciones">Busco presupuesto orientativo para evaluar opciones</option>
+                </select>
+              </div>
+
+              <!-- Fila 5: Descripción adicional -->
+              <div class="form-group">
+                <label for="descripcionPedido">Descripción o Detalles del Proyecto <span class="optional-tag">(opcional)</span></label>
+                <textarea id="descripcionPedido" name="descripcionPedido" rows="3" placeholder="Contanos qué tenés en mente: cantidad de cajones, puertas corredizas, color o si es sobre mampostería..."></textarea>
+              </div>
+
+              <!-- Fila 6: Fotos de referencia (Solución local transparente sin falsas promesas) -->
+              <div class="form-group file-helper-box">
+                <label for="fotosReferencia" class="file-helper-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                  <span>¿Tenés fotos del espacio o de un diseño de referencia? <span class="optional-tag">(opcional)</span></span>
+                </label>
+                <input type="file" id="fotosReferencia" name="fotosReferencia" accept="image/*" multiple class="file-input-control" />
+                <p class="file-helper-note" id="fileHelperNote">
+                  Si seleccionás imágenes aquí, <strong>incluiremos sus nombres en el mensaje</strong> como recordatorio. Como WhatsApp Web no permite adjuntar archivos automáticamente desde un enlace, podrás adjuntarlas directamente en el chat al abrirse.
+                </p>
+              </div>
+
+              <!-- Mensaje de error de validación accesible -->
+              <div id="formErrorAlert" class="form-error-alert" role="alert" aria-live="assertive" hidden></div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-block submit-wa-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <span>Enviar Consulta por WhatsApp</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         G. CONTACTO Y UBICACIÓN EN RAFAELA
+    ====================================================================== -->
+    <section id="contacto" class="section contact-section">
+      <div class="container">
+        
+        <div class="contact-header reveal-up">
+          <h2 class="section-title">
+            Diseñemos juntos el <span class="text-highlight-blue">mueble de tus sueños</span>.
+          </h2>
+          <p class="contact-lead">
+            Estamos listos para escuchar tus ideas y hacerlas realidad. Contactanos por WhatsApp, redes sociales o acercate a nuestro taller en Rafaela.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Tarjetas de Contacto Verificadas -->
+          <div class="contact-cards-col reveal-up">
+            
+            <a href="https://wa.me/5493492327644?text=%C2%A1Hola%20Omar!%20Me%20contacto%20desde%20la%20web%20de%20APPAS%20Amoblamientos." target="_blank" rel="noopener noreferrer" class="contact-card contact-card-highlight">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">WhatsApp y Teléfono Directo</span>
+                <strong class="contact-card-value">3492 327644</strong>
+                <span class="contact-card-action">Iniciar conversación en WhatsApp →</span>
+              </div>
+            </a>
+
+            <a href="https://www.google.com/maps/place/Blvd.+G.+Lehmann+2606,+S2300+Rafaela,+Santa+Fe" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Taller y Atención en Rafaela</span>
+                <strong class="contact-card-value">Bv. Lehmann 2606, esquina J. Peterlin</strong>
+                <span class="contact-card-sub">Rafaela, Santa Fe — Argentina</span>
+              </div>
+            </a>
+
+            <a href="mailto:omarappas@hotmail.com" class="contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Correo Electrónico</span>
+                <strong class="contact-card-value">omarappas@hotmail.com</strong>
+                <span class="contact-card-sub">Envianos planos o consultas detalladas</span>
+              </div>
+            </a>
+
+            <!-- Redes Sociales Oficiales -->
+            <div class="social-links-grid">
+              <a href="https://www.instagram.com/appas.amoblamientos/" target="_blank" rel="noopener noreferrer" class="social-pill-card">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <div>
+                  <span>Instagram Oficial</span>
+                  <strong>@appas.amoblamientos</strong>
+                </div>
+              </a>
+
+              <a href="https://www.facebook.com/appas.carpinteria/photos" target="_blank" rel="noopener noreferrer" class="social-pill-card">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                <div>
+                  <span>Facebook Oficial</span>
+                  <strong>/appas.carpinteria</strong>
+                </div>
+              </a>
+
+              <a href="https://www.google.com/search?q=Appas+Amoblamientos+Rafaela" target="_blank" rel="noopener noreferrer" class="social-pill-card">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <div>
+                  <span>Perfil en Google</span>
+                  <strong>Appas Amoblamientos</strong>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Mapa Interactivo de Google Maps -->
+          <div class="contact-map-col reveal-up" style="--reveal-delay: 120ms;">
+            <div class="map-frame-card">
+              <div class="map-card-header">
+                <div>
+                  <h3>Encontranos en el mapa</h3>
+                  <p>Bv. Lehmann 2606, esquina J. Peterlin — Rafaela, Santa Fe</p>
+                </div>
+                <a href="https://www.google.com/maps/place/Blvd.+G.+Lehmann+2606,+S2300+Rafaela,+Santa+Fe" target="_blank" rel="noopener noreferrer" class="btn btn-outline-blue btn-sm">
+                  Abrir en Google Maps
+                </a>
+              </div>
+              <div class="map-iframe-wrap">
+                <iframe
+                  title="Ubicación de APPAS Amoblamientos en Bv. Lehmann 2606, Rafaela, Santa Fe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.066042468305!2d-61.50352192410384!3d-31.24641159080088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae069a5e4b67%3A0xc3f17d74d232c3f!2sBv.%20Lehmann%202606%2C%20Rafaela%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1721590200000!5m2!1ses-419!2sar"
+                  width="100%"
+                  height="430"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       H. FOOTER INSTITUCIONAL
+  ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand-col">
+          <a href="#inicio" class="footer-logo-wrap" aria-label="Volver al inicio de APPAS Amoblamientos">
+            <img src="img/logo.jpg" alt="Logo APPAS Amoblamientos" width="130" height="82" class="footer-logo-img" />
+            <div>
+              <span class="footer-brand-name">APPAS Amoblamientos</span>
+              <span class="footer-brand-sub">Diseño y Fabricación a Medida</span>
+            </div>
           </a>
-          <a href="https://www.facebook.com/AppasCarpinteria" target="_blank" class="red-link flex flex-col items-center group">
-              <img src="img/facebook.png" alt="Facebook" class="w-12 h-12 mb-2 transform group-hover:scale-110 transition-transform duration-300" />
-              <span class="text-lg text-gray-700 group-hover:text-blue-700 font-medium">/AppasCarpinteria</span>
-          </a>
-          <a href="https://www.google.com/search?q=Appas Amoblamientos" target="_blank" class="red-link flex flex-col items-center group">
-              <img src="img/google.png" alt="Google" class="w-12 h-12 mb-2 transform group-hover:scale-110 transition-transform duration-300" />
-              <span class="text-lg text-gray-700 group-hover:text-blue-700 font-medium">Appas Amoblamientos</span>
-          </a>
-      </div>
-  
-      <div class="mapa w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Encontranos en el mapa</h3>
-          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.066042468305!2d-61.50352192410384!3d-31.24641159080088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae069a5e4b67%3A0xc3f17d74d232c3f!2sBv.%20Lehmann%202606%2C%20Rafaela%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1721590200000!5m2!1ses-419!2sar"
-              width="100%"
-              height="450"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-      </div>
-  </section>
-  
+          <p class="footer-about-text">
+            Más de 60 años de trayectoria trabajando la madera con dedicación y pasión en Rafaela, Santa Fe.
+          </p>
+        </div>
 
-  <footer class="text-center py-6 bg-gray-800 text-gray-300 text-sm mt-12 rounded-md">
-    <p>&copy; 2025 Appas Amoblamientos - Todos los derechos reservados.</p>
+        <div class="footer-links-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#proceso">Del Origen al Detalle</a></li>
+            <li><a href="#productos">Portfolio de Obras</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#pedidos">Solicitar Presupuesto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Especialidades</h4>
+          <ul>
+            <li><a href="#productos" data-filter-jump="cocinas">Amoblamientos de Cocina</a></li>
+            <li><a href="#productos" data-filter-jump="islas">Mesadas e Islas a Medida</a></li>
+            <li><a href="#productos" data-filter-jump="placares">Placares y Dormitorios</a></li>
+            <li><a href="#productos" data-filter-jump="mesas">Mesas y Modulares de Living</a></li>
+            <li><a href="#productos" data-filter-jump="banos">Baños y Tocadores</a></li>
+            <li><a href="#productos" data-filter-jump="especiales">Mobiliario Comercial y Especiales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Contacto Directo</h4>
+          <address class="footer-address">
+            <p><strong>Dirección:</strong> Bv. Lehmann 2606, esq. J. Peterlin</p>
+            <p><strong>Localidad:</strong> Rafaela, Santa Fe, Argentina</p>
+            <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/5493492327644">3492 327644</a></p>
+            <p><strong>Email:</strong> <a href="mailto:omarappas@hotmail.com">omarappas@hotmail.com</a></p>
+          </address>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/appas.amoblamientos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de APPAS Amoblamientos">Instagram</a>
+            <a href="https://www.facebook.com/appas.carpinteria/photos" target="_blank" rel="noopener noreferrer" aria-label="Facebook de APPAS Amoblamientos">Facebook</a>
+            <a href="https://www.google.com/maps/place/Blvd.+G.+Lehmann+2606,+S2300+Rafaela,+Santa+Fe" target="_blank" rel="noopener noreferrer" aria-label="Ubicación en Google Maps">Google Maps</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> APPAS Amoblamientos — Todos los derechos reservados. Rafaela, Santa Fe, Argentina.</p>
+        <a href="#inicio" class="back-to-top-link">Volver arriba ↑</a>
+      </div>
+    </div>
   </footer>
 
+  <!-- =====================================================================
+       LIGHTBOX MODAL ACCESIBLE PARA EL PORTFOLIO
+  ====================================================================== -->
+  <div id="portfolioLightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-container">
+      <div class="lightbox-top-bar">
+        <span class="lightbox-counter" id="lightboxCounter">01 / 20</span>
+        <button type="button" class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Cerrar vista ampliada">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="lightbox-main-content">
+        <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightboxPrevBtn" aria-label="Obra anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+
+        <div class="lightbox-media-stage">
+          <img src="img/imagen6.jpg" alt="" id="lightboxImage" class="lightbox-img" />
+        </div>
+
+        <button type="button" class="lightbox-nav-btn lightbox-next" id="lightboxNextBtn" aria-label="Obra siguiente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <div class="lightbox-details-bar">
+        <div class="lightbox-text">
+          <span class="lightbox-category" id="lightboxCategory">COCINAS</span>
+          <h3 id="lightboxTitle">Revestimiento de mesada de cocina</h3>
+          <p id="lightboxDescription">Mesada de cocina en "L" sobre mampostería.</p>
+        </div>
+        <button type="button" class="btn btn-primary" id="lightboxQuoteBtn">
+          Cotizar un diseño similar
+        </button>
+      </div>
+    </div>
   </div>
 
+  <!-- =====================================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+  ====================================================================== -->
+  <a
+    href="https://wa.me/5493492327644?text=%C2%A1Hola%20Omar!%20Vi%20la%20web%20de%20APPAS%20Amoblamientos%20y%20quisiera%20hacer%20una%20consulta."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-whatsapp"
+    aria-label="Consultar por WhatsApp con APPAS Amoblamientos"
+  >
+    <span class="floating-wa-tooltip">¿Consultas? Escribinos</span>
+    <span class="floating-wa-icon" aria-hidden="true">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </span>
+  </a>
+
+  <!-- Script Principal -->
   <script src="script.js"></script>
 </body>
 </html>
