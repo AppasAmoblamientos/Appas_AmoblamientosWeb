@@ -334,7 +334,7 @@
   const siteHeader = document.getElementById('siteHeader');
   const scrollProgressBar = document.getElementById('scrollProgressBar');
   const navLinks = document.querySelectorAll('.desktop-nav .nav-link');
-  const trackedSections = ['inicio', 'sobre-nosotros', 'proceso', 'productos', 'servicios', 'pedidos', 'contacto']
+  const trackedSections = ['inicio', 'sobre-nosotros', 'proceso', 'productos', 'pedidos', 'contacto']
     .map(function (id) { return document.getElementById(id); })
     .filter(Boolean);
 
